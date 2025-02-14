@@ -2,19 +2,22 @@ import { useParams } from 'react-router-dom';
 import { Button } from '../components/Button';
 import { featuredCasinos } from '../data/casinos';
 import { CreditCard, Gamepad2, Gift, HelpCircle } from 'lucide-react';
+import { AnimatedSection } from '../components/AnimatedSection';
 
 export function CasinoDetail() {
   const { id } = useParams();
   const casino = featuredCasinos.find(c => c.name.toLowerCase().replace(/\s+/g, '-') === id);
 
   if (!casino) {
-    return <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white pt-24 px-4">
-      Casinò non trovato
-    </div>;
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white pt-24 px-4">
+        Casinò non trovato
+      </div>
+    );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white pt-24">
+    <AnimatedSection className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white pt-24">
       <div className="container-responsive">
         <div className="flex items-center gap-6 mb-8">
           <img src={casino.image} alt={casino.name} className="w-24 h-24 rounded-lg object-cover" />
@@ -119,6 +122,8 @@ export function CasinoDetail() {
           </a>
         </div>
       </div>
-    </div>
+    </AnimatedSection>
   );
 }
+
+export default CasinoDetail;

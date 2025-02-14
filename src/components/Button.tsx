@@ -1,4 +1,6 @@
 import { cn } from '../utils';
+import { motion } from 'framer-motion';
+import { LoadingSpinner } from './LoadingSpinner';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline';
@@ -17,7 +19,9 @@ export function Button({
   ...props
 }: ButtonProps) {
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
       className={cn(
         'relative inline-flex items-center justify-center font-bold transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900',
         {
@@ -52,9 +56,9 @@ export function Button({
       
       {loading && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-5 h-5 border-3 border-current border-t-transparent rounded-full animate-spin" />
+          <LoadingSpinner size="sm" />
         </div>
       )}
-    </button>
+    </motion.button>
   );
 }

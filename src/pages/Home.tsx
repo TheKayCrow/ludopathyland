@@ -9,6 +9,7 @@ import { featuredCasinos } from '../data/casinos';
 import { Button } from '../components/Button';
 import { Shield, Zap, Trophy, ArrowRight, Crown, Sparkles, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { AnimatedSection } from '../components/AnimatedSection';
 
 export function Home() {
   const { t } = useTranslation();
@@ -41,7 +42,7 @@ export function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="min-h-[calc(100vh-73px)] flex items-center justify-center relative overflow-hidden">
+      <AnimatedSection className="min-h-[calc(100vh-73px)] flex items-center justify-center relative overflow-hidden">
         {/* Animated background */}
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-black/50 backdrop-blur-sm" />
         
@@ -140,10 +141,10 @@ export function Home() {
             })}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Featured Casinos */}
-      <section className="py-20 bg-gradient-to-b from-black to-gray-900 relative">
+      <AnimatedSection className="py-20 bg-gradient-to-b from-black to-gray-900 relative">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-pastel-purple/10 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-1/4 right-1/4 w-56 h-56 bg-pastel-pink/10 rounded-full blur-3xl animate-float delay-150" />
@@ -166,7 +167,7 @@ export function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       <BankingSection />
       <TricksSection />
@@ -175,3 +176,5 @@ export function Home() {
     </main>
   );
 }
+
+export default Home;
