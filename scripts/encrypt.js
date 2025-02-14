@@ -46,6 +46,10 @@ export const encryptedKeys = ${JSON.stringify(encryptedKeys, null, 2)};
 
 async function writeEncryptedKeys() {
   try {
+    // Ensure the config directory exists
+    const configDir = path.dirname(encryptedKeysFile);
+    await fs.mkdir(configDir, { recursive: true });
+    
     await fs.writeFile(encryptedKeysFile, fileContent, 'utf8');
     console.log('API keys encrypted successfully');
   } catch (error) {
