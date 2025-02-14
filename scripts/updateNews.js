@@ -3,6 +3,12 @@ import fetch from 'node-fetch';
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { config } from 'dotenv';
+import { decryptApiKeys } from './decrypt.js';
+
+// Load environment variables and decrypt API keys
+config();
+const API_KEYS = decryptApiKeys();
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const NEWS_FILE_PATH = path.join(__dirname, '../src/data/news.ts');
@@ -146,7 +152,7 @@ const API_CONFIG = {
   apitube: {
     url: 'https://api.apitube.io/v1/news/articles?query=casino&language=it&limit=10',
     headers: {
-      'Authorization': 'Bearer api_live_FHVwHQpEN1aiyYPM7p5XRBqYHZnJAFAYth4xgwcsKXFAcfRMyry'
+      'Authorization': `Bearer ${API_KEYS.APITUBE_KEY}`
     },
     transform: (data) => {
       if (!data?.data?.length) return [];
@@ -154,7 +160,7 @@ const API_CONFIG = {
     }
   },
   mediastack: {
-    url: 'http://api.mediastack.com/v1/news?access_key=803b6f09ec5963033f224c964e659f62&keywords=casino&languages=it&limit=10',
+    url: `http://api.mediastack.com/v1/news?access_key=${API_KEYS.MEDIASTACK_KEY}&keywords=casino&languages=it&limit=10`,
     transform: (data) => {
       if (!data?.data?.length) return [];
       return data.data.map(transformArticle);
