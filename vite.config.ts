@@ -20,14 +20,9 @@ export default defineConfig({
     },
     // Optimize chunk size
     chunkSizeWarningLimit: 1000,
-    // Enable minification
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true
-      }
-    }
+    // Enable minification with esbuild instead of terser for better performance
+    minify: 'esbuild',
+    target: 'esnext'
   },
   // Optimize dependencies
   optimizeDeps: {
@@ -43,11 +38,5 @@ export default defineConfig({
       'clsx',
       'tailwind-merge'
     ]
-  },
-  // Add error handling for HMR
-  server: {
-    hmr: {
-      overlay: true
-    }
   }
 });
