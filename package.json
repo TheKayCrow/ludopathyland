@@ -8,10 +8,14 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "update-news": "node scripts/updateNews.js"
+    "update-news": "node scripts/updateNews.js",
+    "encrypt": "node scripts/encrypt.js",
+    "decrypt": "node scripts/decrypt.js"
   },
   "dependencies": {
     "clsx": "^2.1.0",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
     "i18next": "^23.10.1",
     "i18next-browser-languagedetector": "^7.2.0",
     "i18next-http-backend": "^2.5.0",
@@ -27,6 +31,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
+    "@types/crypto-js": "^4.2.2",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
