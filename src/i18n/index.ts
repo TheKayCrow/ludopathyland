@@ -15,12 +15,14 @@ i18n
       escapeValue: false,
     },
     detection: {
-      order: ['querystring', 'navigator', 'htmlTag', 'path', 'subdomain'],
+      order: ['querystring', 'navigator', 'path', 'subdomain'],
       lookupQuerystring: 'lang',
-      caches: ['localStorage'],
+      caches: ['localStorage']
     },
     backend: {
       loadPath: '/locales/{{lng}}/translation.json',
+      allowMultiLoading: false,
+      crossDomain: false
     }
   });
 

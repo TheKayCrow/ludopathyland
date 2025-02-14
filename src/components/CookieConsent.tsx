@@ -45,24 +45,43 @@ export function CookieConsent({ onPrivacyClick }: CookieConsentProps) {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gray-900 border-t border-white/10 p-4 backdrop-blur-lg z-50">
-      <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-gray-300 text-center md:text-left">
-          {t('cookies.message')}{' '}
-          <button
-            onClick={onPrivacyClick}
-            className="text-purple-400 hover:text-purple-300 underline"
-          >
-            {t('cookies.privacyPolicy')}
-          </button>
-        </p>
-        <div className="flex gap-4">
-          <Button variant="outline" size="sm" onClick={() => handleAccept(false)}>
-            {t('buttons.acceptNecessary')}
-          </Button>
-          <Button variant="primary" size="sm" onClick={() => handleAccept(true)}>
-            {t('buttons.acceptAll')}
-          </Button>
+    <div className="fixed bottom-0 left-0 right-0 z-50">
+      <div className="bg-gray-900/95 backdrop-blur-lg border-t border-white/10">
+        <div className="container-responsive py-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="text-gray-300 text-center md:text-left">
+              <p className="mb-2">
+                {t('cookies.message')}{' '}
+                <button
+                  onClick={onPrivacyClick}
+                  className="text-pastel-purple hover:text-pastel-pink transition-colors underline"
+                >
+                  {t('cookies.privacyPolicy')}
+                </button>
+              </p>
+              <p className="text-sm text-gray-400">
+                {t('cookies.description')}
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                onClick={() => handleAccept(false)}
+                className="whitespace-nowrap"
+              >
+                {t('buttons.acceptNecessary')}
+              </Button>
+              <Button 
+                variant="primary" 
+                size="sm" 
+                onClick={() => handleAccept(true)}
+                className="whitespace-nowrap"
+              >
+                {t('buttons.acceptAll')}
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

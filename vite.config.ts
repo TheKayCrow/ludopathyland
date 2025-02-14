@@ -7,20 +7,31 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    sourcemap: true,
+    sourcemap: false,
     rollupOptions: {
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
           ui: ['lucide-react', 'clsx', 'tailwind-merge'],
-          i18n: ['i18next', 'react-i18next']
+          i18n: ['i18next', 'react-i18next', 'i18next-browser-languagedetector', 'i18next-http-backend']
         }
       }
-    }
+    },
+    copyPublicDir: true,
+    chunkSizeWarningLimit: 1000,
+    minify: 'esbuild',
+    target: 'esnext'
   },
-  server: {
-    port: 3000,
-    host: true,
-    open: true
+  publicDir: 'public',
+  optimizeDeps: {
+    include: [
+      'react',
+      'react-dom',
+      'react-router-dom',
+      'i18next',
+      'react-i18next',
+      'i18next-browser-languagedetector',
+      'i18next-http-backend'
+    ]
   }
 });
