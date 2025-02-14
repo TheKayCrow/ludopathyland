@@ -9,6 +9,35 @@
     "login": "Accedi",
     "register": "Registrati"
   },
+  "home": {
+    "hero": {
+      "title": "Benvenuto su",
+      "subtitle": "La tua guida completa al mondo dei casinò online, delle strategie e del guadagno intelligente",
+      "search": "Cerca casinò, bonus o guide..."
+    }
+  },
+  "sections": {
+    "casinos": {
+      "title": "Casinò in Evidenza",
+      "subtitle": "I migliori casinò online selezionati per te"
+    },
+    "banking": {
+      "title": "Metodi di Pagamento",
+      "subtitle": "Confronta i migliori metodi di pagamento per casinò online"
+    },
+    "strategies": {
+      "title": "Trucchi e Strategie",
+      "subtitle": "Guide dettagliate e strategie vincenti per il gioco responsabile"
+    },
+    "earnings": {
+      "title": "Guadagno Online",
+      "subtitle": "Metodi legali e verificati per guadagnare online"
+    },
+    "blog": {
+      "title": "Blog e Novità",
+      "subtitle": "Articoli, guide e aggiornamenti dal mondo dei casinò online"
+    }
+  },
   "footer": {
     "newsletter": {
       "title": "Resta Aggiornato",
@@ -55,5 +84,21 @@
         "siteMap": "Mappa del Sito"
       }
     }
+  },
+  "buttons": {
+    "getBonus": "Ottieni Bonus",
+    "review": "Recensione",
+    "readMore": "Leggi di Più",
+    "learnMore": "Scopri di Più",
+    "startNow": "Inizia Ora",
+    "details": "Maggiori Dettagli",
+    "readGuide": "Leggi Guida",
+    "readArticle": "Leggi Articolo",
+    "subscribe": "Iscriviti",
+    "accept": "Accetta",
+    "acceptAll": "Accetta Tutti",
+    "acceptNecessary": "Accetta Necessari",
+    "understood": "Ho Capito",
+    "close": "Chiudi"
   }
 }

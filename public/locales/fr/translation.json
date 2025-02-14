@@ -9,6 +9,35 @@
     "login": "Connexion",
     "register": "S'inscrire"
   },
+  "home": {
+    "hero": {
+      "title": "Bienvenue sur",
+      "subtitle": "Votre guide complet des casinos en ligne, des stratégies et des gains intelligents",
+      "search": "Rechercher des casinos, bonus ou guides..."
+    }
+  },
+  "sections": {
+    "casinos": {
+      "title": "Casinos en Vedette",
+      "subtitle": "Les meilleurs casinos en ligne sélectionnés pour vous"
+    },
+    "banking": {
+      "title": "Méthodes de Paiement",
+      "subtitle": "Comparez les meilleures méthodes de paiement pour les casinos en ligne"
+    },
+    "strategies": {
+      "title": "Astuces et Stratégies",
+      "subtitle": "Guides détaillés et stratégies gagnantes pour le jeu responsable"
+    },
+    "earnings": {
+      "title": "Gains en Ligne",
+      "subtitle": "Méthodes légales et vérifiées pour gagner en ligne"
+    },
+    "blog": {
+      "title": "Blog et Actualités",
+      "subtitle": "Articles, guides et mises à jour du monde des casinos en ligne"
+    }
+  },
   "footer": {
     "newsletter": {
       "title": "Restez Informé",
@@ -55,5 +84,21 @@
         "siteMap": "Plan du Site"
       }
     }
+  },
+  "buttons": {
+    "getBonus": "Obtenir le Bonus",
+    "review": "Avis",
+    "readMore": "Lire Plus",
+    "learnMore": "En Savoir Plus",
+    "startNow": "Commencer",
+    "details": "Plus de Détails",
+    "readGuide": "Lire le Guide",
+    "readArticle": "Lire l'Article",
+    "subscribe": "S'abonner",
+    "accept": "Accepter",
+    "acceptAll": "Tout Accepter",
+    "acceptNecessary": "Accepter Nécessaire",
+    "understood": "J'ai Compris",
+    "close": "Fermer"
   }
 }

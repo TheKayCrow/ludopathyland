@@ -9,6 +9,35 @@
     "login": "Anmelden",
     "register": "Registrieren"
   },
+  "home": {
+    "hero": {
+      "title": "Willkommen bei",
+      "subtitle": "Ihr umfassender Leitfaden für Online-Casinos, Strategien und intelligentes Verdienen",
+      "search": "Casinos, Boni oder Anleitungen suchen..."
+    }
+  },
+  "sections": {
+    "casinos": {
+      "title": "Ausgewählte Casinos",
+      "subtitle": "Die besten Online-Casinos für Sie ausgewählt"
+    },
+    "banking": {
+      "title": "Zahlungsmethoden",
+      "subtitle": "Vergleichen Sie die besten Zahlungsmethoden für Online-Casinos"
+    },
+    "strategies": {
+      "title": "Tipps und Strategien",
+      "subtitle": "Detaillierte Anleitungen und Gewinnstrategien für verantwortungsvolles Spielen"
+    },
+    "earnings": {
+      "title": "Online Verdienst",
+      "subtitle": "Legale und verifizierte Methoden zum Online-Verdienen"
+    },
+    "blog": {
+      "title": "Blog und Neuigkeiten",
+      "subtitle": "Artikel, Anleitungen und Updates aus der Online-Casino-Welt"
+    }
+  },
   "footer": {
     "newsletter": {
       "title": "Bleiben Sie Informiert",
@@ -55,5 +84,21 @@
         "siteMap": "Sitemap"
       }
     }
+  },
+  "buttons": {
+    "getBonus": "Bonus Erhalten",
+    "review": "Bewertung",
+    "readMore": "Mehr Lesen",
+    "learnMore": "Mehr Erfahren",
+    "startNow": "Jetzt Starten",
+    "details": "Mehr Details",
+    "readGuide": "Anleitung Lesen",
+    "readArticle": "Artikel Lesen",
+    "subscribe": "Abonnieren",
+    "accept": "Akzeptieren",
+    "acceptAll": "Alle Akzeptieren",
+    "acceptNecessary": "Notwendige Akzeptieren",
+    "understood": "Verstanden",
+    "close": "Schließen"
   }
 }

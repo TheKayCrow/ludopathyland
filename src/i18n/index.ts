@@ -10,6 +10,7 @@ i18n
   .init({
     fallbackLng: 'it',
     supportedLngs: ['it', 'en', 'es', 'fr', 'de', 'ru'],
+    debug: import.meta.env.DEV,
     interpolation: {
       escapeValue: false,
     },
@@ -20,12 +21,7 @@ i18n
     },
     backend: {
       loadPath: '/locales/{{lng}}/translation.json',
-      requestOptions: {
-        cache: 'default'
-      }
-    },
-    load: 'languageOnly',
-    preload: ['it', 'en', 'es', 'fr', 'de', 'ru']
+    }
   });
 
 export default i18n;
