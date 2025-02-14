@@ -27,6 +27,52 @@ const CATEGORY_IMAGES = {
   'default': 'https://images.unsplash.com/photo-1518623489648-a173ef7824f3?auto=format&fit=crop&q=80&w=600'
 };
 
+// API Configuration with encrypted keys
+const API_CONFIG = {
+  newsapi: {
+    url: `https://newsapi.org/v2/everything?q=casino+gambling&language=it&sortBy=publishedAt&apiKey=${decryptedKeys.newsapi}`,
+    transform: (data) => {
+      if (!data?.articles?.length) return [];
+      return data.articles.map(transformArticle);
+    }
+  },
+  apitube: {
+    url: 'https://api.apitube.io/v1/news/articles?query=casino&language=it&limit=10',
+    headers: {
+      'Authorization': `Bearer ${decryptedKeys.apitube}`
+    },
+    transform: (data) => {
+      if (!data?.data?.length) return [];
+      return data.data.map(transformArticle);
+    }
+  },
+  mediastack: {
+    url: `http://api.mediastack.com/v1/news?access_key=${decryptedKeys.mediastack}&keywords=casino&languages=it&limit=10`,
+    transform: (data) => {
+      if (!data?.data?.length) return [];
+      return data.data.map(transformArticle);
+    }
+  },
+  rapidapi: {
+    url: 'https://gambling-news-live.p.rapidapi.com/news',
+    headers: {
+      'X-RapidAPI-Key': decryptedKeys.rapidapi,
+      'X-RapidAPI-Host': 'gambling-news-live.p.rapidapi.com'
+    },
+    transform: (data) => {
+      if (!data?.articles?.length) return [];
+      return data.articles.map(transformArticle);
+    }
+  },
+  worldnews: {
+    url: `https://api.worldnewsapi.com/search-news?text=casino gambling&language=it&api-key=${decryptedKeys.worldnews}`,
+    transform: (data) => {
+      if (!data?.news?.length) return [];
+      return data.news.map(transformArticle);
+    }
+  }
+};
+
 // Content enhancement functions
 function enhanceContent(article) {
   const { title, excerpt = '', content = '' } = article;
@@ -146,27 +192,6 @@ function transformArticle(rawArticle) {
     image: getCategoryImage(base)
   };
 }
-
-// API Configuration
-const API_CONFIG = {
-  apitube: {
-    url: 'https://api.apitube.io/v1/news/articles?query=casino&language=it&limit=10',
-    headers: {
-      'Authorization': `Bearer ${decryptedKeys.apitube}`
-    },
-    transform: (data) => {
-      if (!data?.data?.length) return [];
-      return data.data.map(transformArticle);
-    }
-  },
-  mediastack: {
-    url: `http://api.mediastack.com/v1/news?access_key=${decryptedKeys.mediastack}&keywords=casino&languages=it&limit=10`,
-    transform: (data) => {
-      if (!data?.data?.length) return [];
-      return data.data.map(transformArticle);
-    }
-  }
-};
 
 // Cache management
 async function createCacheDir() {

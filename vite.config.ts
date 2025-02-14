@@ -8,7 +8,7 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
-    // Optimize build for SiteGround
+    // Optimize build for production
     rollupOptions: {
       output: {
         manualChunks: {
@@ -43,5 +43,11 @@ export default defineConfig({
       'clsx',
       'tailwind-merge'
     ]
+  },
+  // Add error handling for HMR
+  server: {
+    hmr: {
+      overlay: true
+    }
   }
 });
