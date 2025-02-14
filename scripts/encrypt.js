@@ -9,16 +9,28 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // Load environment variables
 config();
 
-const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY || 'your-secure-encryption-key';
+const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY;
+if (!ENCRYPTION_KEY) {
+  console.error('Error: ENCRYPTION_KEY environment variable is not set');
+  process.exit(1);
+}
 
 // API keys to encrypt
 const apiKeys = {
-  newsapi: process.env.NEWSAPI_KEY || '2c6e6c9c5c3548c482815747c3a24aa2',
-  mediastack: process.env.MEDIASTACK_KEY || '803b6f09ec5963033f224c964e659f62',
-  apitube: process.env.APITUBE_KEY || 'api_live_FHVwHQpEN1aiyYPM7p5XRBqYHZnJAFAYth4xgwcsKXFAcfRMyry',
-  rapidapi: process.env.RAPIDAPI_KEY || 'e9ef2f1150mshf85fbd75df3c4b9p10a266jsn408b80ec15c8',
-  worldnews: process.env.WORLDNEWS_KEY || 'x7F1m2J9N9Q7X7veRL5I2bTu2JGbypAv'
+  newsapi: process.env.NEWSAPI_KEY,
+  mediastack: process.env.MEDIASTACK_KEY,
+  apitube: process.env.APITUBE_KEY,
+  rapidapi: process.env.RAPIDAPI_KEY,
+  worldnews: process.env.WORLDNEWS_KEY
 };
+
+// Validate required API keys
+for (const [key, value] of Object.entries(apiKeys)) {
+  if (!value) {
+    console.error(`Error: ${key.toUpperCase()}_KEY environment variable is not set`);
+    process.exit(1);
+  }
+}
 
 // Encrypt API keys
 const encryptedKeys = {};
@@ -38,6 +50,7 @@ async function writeEncryptedKeys() {
     console.log('API keys encrypted successfully');
   } catch (error) {
     console.error('Error writing encrypted keys:', error);
+    process.exit(1);
   }
 }
 
