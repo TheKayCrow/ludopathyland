@@ -24,5 +24,85 @@
       "primary": "Commencer",
       "secondary": "En Savoir Plus"
     }
+  },
+  "sections": {
+    "casinos": {
+      "title": "Meilleurs Casinos en Ligne",
+      "subtitle": "Comparez les meilleurs casinos en ligne agréés"
+    },
+    "banking": {
+      "title": "Méthodes de Paiement",
+      "subtitle": "Dépôts et retraits sûrs et rapides"
+    },
+    "strategies": {
+      "title": "Stratégies et Conseils",
+      "subtitle": "Améliorez votre jeu avec des stratégies éprouvées"
+    },
+    "earnings": {
+      "title": "Opportunités de Gains",
+      "subtitle": "Découvrez différentes façons de gagner en ligne"
+    },
+    "blog": {
+      "title": "Dernières Actualités",
+      "subtitle": "Les dernières mises à jour du monde des casinos"
+    }
+  },
+  "buttons": {
+    "getBonus": "Obtenir le Bonus",
+    "review": "Avis",
+    "readMore": "Lire Plus",
+    "readArticle": "Lire l'Article",
+    "readGuide": "Lire le Guide",
+    "learnMore": "En Savoir Plus",
+    "details": "Voir les Détails",
+    "acceptAll": "Tout Accepter",
+    "acceptNecessary": "Accepter Nécessaires"
+  },
+  "footer": {
+    "newsletter": {
+      "title": "S'abonner à la Newsletter",
+      "description": "Recevez les dernières mises à jour et offres exclusives",
+      "placeholder": "Votre adresse email",
+      "button": "S'abonner"
+    },
+    "quickLinks": {
+      "title": "Liens Rapides",
+      "casinoComparison": "Comparaison de Casinos",
+      "paymentMethods": "Méthodes de Paiement",
+      "tipsAndStrategies": "Conseils et Stratégies",
+      "onlineEarnings": "Gains en Ligne",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Support",
+      "email": {
+        "label": "Email",
+        "value": "support@ludopathyland.com"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "value": "+33 800 123 456"
+      },
+      "location": {
+        "label": "Localisation",
+        "value": "Paris, France"
+      }
+    },
+    "legal": {
+      "title": "Légal",
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions d'Utilisation",
+      "responsibleGaming": "Jeu Responsable"
+    },
+    "description": "Votre source de confiance pour les comparaisons et stratégies de casinos en ligne",
+    "bottom": {
+      "copyright": "© 2025 Ludopathyland. Tous droits réservés.",
+      "links": {
+        "privacy": "Politique de Confidentialité",
+        "terms": "Conditions d'Utilisation",
+        "responsibleGaming": "Jeu Responsable",
+        "siteMap": "Plan du Site"
+      }
+    }
   }
 }

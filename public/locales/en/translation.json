@@ -24,5 +24,85 @@
       "primary": "Get Started",
       "secondary": "Learn More"
     }
+  },
+  "sections": {
+    "casinos": {
+      "title": "Top Online Casinos",
+      "subtitle": "Compare the best licensed online casinos"
+    },
+    "banking": {
+      "title": "Payment Methods",
+      "subtitle": "Secure and fast deposits and withdrawals"
+    },
+    "strategies": {
+      "title": "Strategies & Tips",
+      "subtitle": "Improve your game with proven strategies"
+    },
+    "earnings": {
+      "title": "Earning Opportunities",
+      "subtitle": "Discover various ways to earn online"
+    },
+    "blog": {
+      "title": "Latest News",
+      "subtitle": "The latest updates from the casino world"
+    }
+  },
+  "buttons": {
+    "getBonus": "Get Bonus",
+    "review": "Review",
+    "readMore": "Read More",
+    "readArticle": "Read Article",
+    "readGuide": "Read Guide",
+    "learnMore": "Learn More",
+    "details": "View Details",
+    "acceptAll": "Accept All",
+    "acceptNecessary": "Accept Necessary"
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Subscribe to Newsletter",
+      "description": "Get the latest updates and exclusive offers",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "casinoComparison": "Casino Comparison",
+      "paymentMethods": "Payment Methods",
+      "tipsAndStrategies": "Tips & Strategies",
+      "onlineEarnings": "Online Earnings",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Support",
+      "email": {
+        "label": "Email",
+        "value": "support@ludopathyland.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+1 800 123 4567"
+      },
+      "location": {
+        "label": "Location",
+        "value": "New York, USA"
+      }
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "responsibleGaming": "Responsible Gaming"
+    },
+    "description": "Your trusted source for online casino comparisons and strategies",
+    "bottom": {
+      "copyright": "© 2025 Ludopathyland. All rights reserved.",
+      "links": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "responsibleGaming": "Responsible Gaming",
+        "siteMap": "Sitemap"
+      }
+    }
   }
 }

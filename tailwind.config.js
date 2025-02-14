@@ -5,11 +5,10 @@ export default {
     extend: {
       colors: {
         pastel: {
-          purple: '#9966FF',
           purple: {
             DEFAULT: '#9966FF',
-            dark: '#7B40FF',
-            light: '#B088FF'
+            light: '#B088FF',
+            dark: '#7B40FF'
           },
           pink: '#FF4D8C',
           blue: '#4D94FF',
@@ -70,6 +69,34 @@ export default {
       boxShadow: {
         'pastel': '0 4px 14px 0 rgba(153, 102, 255, 0.4)',
         'pastel-lg': '0 10px 25px -3px rgba(153, 102, 255, 0.4)',
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#A3A3A3',
+            a: {
+              color: '#9966FF',
+              '&:hover': {
+                color: '#B088FF',
+              },
+            },
+            h1: {
+              color: '#FFFFFF',
+            },
+            h2: {
+              color: '#FFFFFF',
+            },
+            h3: {
+              color: '#FFFFFF',
+            },
+            strong: {
+              color: '#FFFFFF',
+            },
+            code: {
+              color: '#FF4D8C',
+            },
+          },
+        },
       },
     },
   },

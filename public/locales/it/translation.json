@@ -24,5 +24,85 @@
       "primary": "Inizia Ora",
       "secondary": "Scopri di Più"
     }
+  },
+  "sections": {
+    "casinos": {
+      "title": "Migliori Casinò Online",
+      "subtitle": "Confronta i migliori casinò online con licenza"
+    },
+    "banking": {
+      "title": "Metodi di Pagamento",
+      "subtitle": "Depositi e prelievi sicuri e veloci"
+    },
+    "strategies": {
+      "title": "Strategie e Consigli",
+      "subtitle": "Migliora il tuo gioco con strategie collaudate"
+    },
+    "earnings": {
+      "title": "Opportunità di Guadagno",
+      "subtitle": "Scopri diversi modi per guadagnare online"
+    },
+    "blog": {
+      "title": "Ultime Notizie",
+      "subtitle": "Gli ultimi aggiornamenti dal mondo dei casinò"
+    }
+  },
+  "buttons": {
+    "getBonus": "Ottieni Bonus",
+    "review": "Recensione",
+    "readMore": "Leggi di Più",
+    "readArticle": "Leggi Articolo",
+    "readGuide": "Leggi Guida",
+    "learnMore": "Scopri di Più",
+    "details": "Vedi Dettagli",
+    "acceptAll": "Accetta Tutti",
+    "acceptNecessary": "Accetta Necessari"
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Iscriviti alla Newsletter",
+      "description": "Ricevi gli ultimi aggiornamenti e offerte esclusive",
+      "placeholder": "Il tuo indirizzo email",
+      "button": "Iscriviti"
+    },
+    "quickLinks": {
+      "title": "Link Rapidi",
+      "casinoComparison": "Confronto Casinò",
+      "paymentMethods": "Metodi di Pagamento",
+      "tipsAndStrategies": "Consigli e Strategie",
+      "onlineEarnings": "Guadagni Online",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Supporto",
+      "email": {
+        "label": "Email",
+        "value": "supporto@ludopathyland.com"
+      },
+      "phone": {
+        "label": "Telefono",
+        "value": "+39 800 123 456"
+      },
+      "location": {
+        "label": "Sede",
+        "value": "Milano, Italia"
+      }
+    },
+    "legal": {
+      "title": "Legale",
+      "privacy": "Privacy Policy",
+      "terms": "Termini di Servizio",
+      "responsibleGaming": "Gioco Responsabile"
+    },
+    "description": "La tua fonte affidabile per confronti e strategie di casinò online",
+    "bottom": {
+      "copyright": "© 2025 Ludopathyland. Tutti i diritti riservati.",
+      "links": {
+        "privacy": "Privacy Policy",
+        "terms": "Termini di Servizio",
+        "responsibleGaming": "Gioco Responsabile",
+        "siteMap": "Mappa del Sito"
+      }
+    }
   }
 }

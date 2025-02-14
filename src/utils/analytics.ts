@@ -18,20 +18,44 @@ if (plausible) {
   plausible.enableAutoOutboundTracking();
 }
 
-// Initialize Sentry only if DSN is available and in browser
-if (isClient && import.meta.env.VITE_SENTRY_DSN) {
+// Initialize Sentry
+if (isClient) {
   try {
-    Sentry.init({
-      dsn: import.meta.env.VITE_SENTRY_DSN,
-      integrations: [
-        new Sentry.BrowserTracing(),
-        new Sentry.Replay()
-      ],
-      tracesSampleRate: 0.2,
-      replaysSessionSampleRate: 0.1,
-      replaysOnErrorSampleRate: 1.0,
-      environment: import.meta.env.MODE
-    });
+    // Only initialize if we're in production and have a valid DSN
+    if (import.meta.env.PROD && import.meta.env.VITE_SENTRY_DSN) {
+      Sentry.init({
+        dsn: import.meta.env.VITE_SENTRY_DSN,
+        integrations: [
+          new Sentry.BrowserTracing({
+            tracingOrigins: ['localhost', 'ludopathyland.com']
+          }),
+          new Sentry.Replay()
+        ],
+        // Performance Monitoring
+        tracesSampleRate: import.meta.env.PROD ? 0.2 : 1.0,
+        // Session Replay
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+        // Environment
+        environment: import.meta.env.MODE,
+        // Enable debug in development
+        debug: import.meta.env.DEV,
+        // Ignore common errors
+        ignoreErrors: [
+          'ResizeObserver loop limit exceeded',
+          'Network request failed',
+          /^Script error\.?$/,
+          /^Javascript error: Script error\.? on line 0$/
+        ],
+        beforeSend(event) {
+          // Don't send events in development
+          if (import.meta.env.DEV) {
+            return null;
+          }
+          return event;
+        }
+      });
+    }
   } catch (error) {
     console.error('Failed to initialize Sentry:', error);
   }
