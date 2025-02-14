@@ -22,6 +22,16 @@ export default defineConfig({
     minify: 'esbuild',
     target: 'esnext'
   },
+  server: {
+    port: 5173,
+    host: true,
+    strictPort: true
+  },
+  preview: {
+    port: 4173,
+    host: true,
+    strictPort: true
+  },
   publicDir: 'public',
   optimizeDeps: {
     include: [

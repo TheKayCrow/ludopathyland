@@ -5,10 +5,11 @@ import { Loader } from './Loader';
 import { useState } from 'react';
 import { Modal } from './Modal';
 import { NewsArticle } from '../types';
+import { AnimatedSection } from './AnimatedSection';
 
 export function BlogSection() {
   const { t } = useTranslation();
-  const { news, loading, error } = useNews();
+  const { news, loading } = useNews();
   const [selectedArticle, setSelectedArticle] = useState<NewsArticle | null>(null);
   
   // Get the 3 most recent news articles
@@ -20,54 +21,42 @@ export function BlogSection() {
 
   if (loading) {
     return (
-      <section className="py-20">
+      <AnimatedSection className="py-20">
         <div className="mx-auto max-w-7xl px-4">
           <h2 className="section-title">{t('sections.blog.title')}</h2>
           <p className="section-subtitle">Caricamento notizie in corso...</p>
           <Loader />
         </div>
-      </section>
-    );
-  }
-
-  if (error) {
-    return (
-      <section className="py-20">
-        <div className="mx-auto max-w-7xl px-4">
-          <h2 className="section-title">{t('sections.blog.title')}</h2>
-          <p className="text-red-400 text-center mb-8">Si è verificato un errore nel caricamento delle notizie.</p>
-        </div>
-      </section>
+      </AnimatedSection>
     );
   }
 
   return (
-    <section id="blog" className="py-20">
+    <AnimatedSection className="py-20">
       <div className="mx-auto max-w-7xl px-4">
         <h2 className="section-title">{t('sections.blog.title')}</h2>
         <p className="section-subtitle">{t('sections.blog.subtitle')}</p>
         
         <div className="grid gap-6 md:grid-cols-3">
           {recentNews.map((post) => (
-            <div key={post.id} className="bg-white/5 rounded-2xl overflow-hidden backdrop-blur-sm hover:bg-white/10 transition-all flex flex-col">
-              <div className="relative w-full h-48">
-                <img 
-                  src={post.image} 
-                  alt={post.title}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  onError={(e) => {
-                    e.currentTarget.src = 'https://images.unsplash.com/photo-1518623489648-a173ef7824f3?auto=format&fit=crop&q=80&w=600';
-                  }}
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
+            <div key={post.id} className="bg-white/5 rounded-2xl overflow-hidden backdrop-blur-sm hover:bg-white/10 transition-all">
+              <img 
+                src={post.image} 
+                alt={post.title} 
+                className="w-full h-48 object-cover"
+                loading="lazy"
+                onError={(e) => {
+                  e.currentTarget.src = 'https://images.unsplash.com/photo-1518623489648-a173ef7824f3?auto=format&fit=crop&q=80&w=600';
+                }}
+              />
+              <div className="p-6">
                 <div className="flex items-center gap-2 text-sm text-purple-400 mb-2">
                   <span>{post.category}</span>
                   <span>•</span>
                   <span>{post.date}</span>
                 </div>
-                <h3 className="text-xl font-bold mb-4 flex-grow line-clamp-2">{post.title}</h3>
+                <h3 className="text-xl font-bold mb-2">{post.title}</h3>
+                <p className="text-gray-400 mb-4 line-clamp-3">{post.excerpt}</p>
                 <Button 
                   variant="outline" 
                   size="sm"
@@ -85,7 +74,7 @@ export function BlogSection() {
           onClose={() => setSelectedArticle(null)}
           title={selectedArticle?.title || ''}
         >
-          <div className="space-y-4">
+          <div className="space-y-6">
             <img
               src={selectedArticle?.image}
               alt={selectedArticle?.title}
@@ -99,10 +88,14 @@ export function BlogSection() {
               <span>•</span>
               <span>{selectedArticle?.date}</span>
             </div>
-            <p className="text-gray-300 whitespace-pre-wrap">{selectedArticle?.content}</p>
+            <div className="prose prose-invert max-w-none">
+              <p className="text-gray-300 whitespace-pre-wrap leading-relaxed">
+                {selectedArticle?.content}
+              </p>
+            </div>
           </div>
         </Modal>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

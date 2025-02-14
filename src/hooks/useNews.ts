@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { NewsArticle } from '../types';
-import { newsArticles } from '../data/news';
+import { newsArticles as fallbackNews } from '../data/news';
 
 export function useNews() {
-  const [news, setNews] = useState<NewsArticle[]>(newsArticles);
+  const [news, setNews] = useState<NewsArticle[]>(fallbackNews);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -13,12 +13,10 @@ export function useNews() {
     async function fetchNews() {
       try {
         setLoading(true);
-        // In development, use static data
-        if (import.meta.env.DEV) {
-          if (mounted) {
-            setNews(newsArticles);
-            setError(null);
-          }
+        // In development or if API fails, use static data
+        if (import.meta.env.DEV || !mounted) {
+          setNews(fallbackNews);
+          setError(null);
           return;
         }
 
@@ -26,16 +24,17 @@ export function useNews() {
         const response = await fetch('/api/news');
         if (!response.ok) throw new Error('Failed to fetch news');
         const data = await response.json();
+        
         if (mounted) {
           setNews(data);
           setError(null);
         }
       } catch (err) {
+        console.error('Error fetching news:', err);
+        // Fallback to static data on error
         if (mounted) {
-          console.error('Error fetching news:', err);
-          // Fallback to static data on error
-          setNews(newsArticles);
-          setError(null);
+          setNews(fallbackNews);
+          setError(null); // Don't show error to user since we have fallback data
         }
       } finally {
         if (mounted) {
