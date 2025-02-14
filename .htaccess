@@ -22,9 +22,9 @@ AddHandler application/x-httpd-php82 .php
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # www to non-www redirect
-    RewriteCond %{HTTP_HOST} ^www\.ludopathyland\.com [NC]
-    RewriteRule ^(.*)$ https://ludopathyland.com/$1 [L,R=301]
+    # www to non-www redirect (rimuovi o modifica in base alle tue preferenze)
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 </IfModule>
 
 # Enable CORS
