@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "casinos": "Casinos",
+    "guides": "Guides",
+    "strategies": "Strategies",
+    "banking": "Banking",
+    "earnings": "Earnings",
+    "news": "News",
+    "login": "Login",
+    "register": "Register"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to",
+      "subtitle": "Your complete guide to online casinos, strategies and smart earnings",
+      "search": "Search casinos, bonuses or guides..."
+    }
+  },
+  "buttons": {
+    "getBonus": "Get Bonus",
+    "review": "Review",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "startNow": "Start Now",
+    "details": "More Details",
+    "readGuide": "Read Guide",
+    "readArticle": "Read Article",
+    "subscribe": "Subscribe",
+    "accept": "Accept",
+    "acceptAll": "Accept All",
+    "acceptNecessary": "Accept Necessary",
+    "understood": "I Understand",
+    "close": "Close"
+  }
+}

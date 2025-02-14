@@ -16,11 +16,11 @@ export function Button({
   return (
     <button
       className={cn(
-        'rounded-full font-semibold transition-all',
+        'rounded-full font-semibold transition-all shadow-pastel hover:shadow-pastel-lg',
         {
-          'bg-gradient-to-r from-purple-600 to-red-600 text-white hover:opacity-90': variant === 'primary',
+          'bg-gradient-to-r from-pastel-purple to-pastel-pink text-gray-900 hover:opacity-90': variant === 'primary',
           'bg-white text-gray-900 hover:bg-gray-100': variant === 'secondary',
-          'border-2 border-white text-white hover:bg-white/10': variant === 'outline',
+          'border-2 border-pastel-purple text-pastel-purple hover:bg-pastel-purple/10': variant === 'outline',
           'px-4 py-2 text-sm': size === 'sm',
           'px-6 py-3': size === 'md',
           'px-8 py-4 text-lg': size === 'lg',

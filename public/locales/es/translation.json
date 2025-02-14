@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "casinos": "Casinos",
+    "guides": "Guías",
+    "strategies": "Estrategias",
+    "banking": "Pagos",
+    "earnings": "Ganancias",
+    "news": "Noticias",
+    "login": "Iniciar Sesión",
+    "register": "Registrarse"
+  },
+  "home": {
+    "hero": {
+      "title": "Bienvenido a",
+      "subtitle": "Tu guía completa de casinos online, estrategias y ganancias inteligentes",
+      "search": "Buscar casinos, bonos o guías..."
+    }
+  },
+  "buttons": {
+    "getBonus": "Obtener Bono",
+    "review": "Reseña",
+    "readMore": "Leer Más",
+    "learnMore": "Saber Más",
+    "startNow": "Empezar Ahora",
+    "details": "Más Detalles",
+    "readGuide": "Leer Guía",
+    "readArticle": "Leer Artículo",
+    "subscribe": "Suscribirse",
+    "accept": "Aceptar",
+    "acceptAll": "Aceptar Todo",
+    "acceptNecessary": "Aceptar Necesario",
+    "understood": "Entendido",
+    "close": "Cerrar"
+  }
+}

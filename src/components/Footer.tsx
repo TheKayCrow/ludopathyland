@@ -1,4 +1,5 @@
 import { Crown, Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from './Button';
 
 export function Footer() {
@@ -38,11 +39,11 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold">Link Rapidi</h3>
             <ul className="mt-4 space-y-2">
-              <li><a href="#casino" className="text-gray-400 hover:text-purple-400">Confronto Casinò</a></li>
-              <li><a href="#banking" className="text-gray-400 hover:text-purple-400">Metodi di Pagamento</a></li>
-              <li><a href="#tricks" className="text-gray-400 hover:text-purple-400">Trucchi e Strategie</a></li>
-              <li><a href="#earnings" className="text-gray-400 hover:text-purple-400">Guadagno Online</a></li>
-              <li><a href="#blog" className="text-gray-400 hover:text-purple-400">Blog</a></li>
+              <li><Link to="/comparazione" className="text-gray-400 hover:text-purple-400">Confronto Casinò</Link></li>
+              <li><Link to="/banking" className="text-gray-400 hover:text-purple-400">Metodi di Pagamento</Link></li>
+              <li><Link to="/strategie" className="text-gray-400 hover:text-purple-400">Trucchi e Strategie</Link></li>
+              <li><Link to="/guadagni" className="text-gray-400 hover:text-purple-400">Guadagno Online</Link></li>
+              <li><Link to="/news" className="text-gray-400 hover:text-purple-400">Blog</Link></li>
             </ul>
           </div>
 
@@ -50,13 +51,13 @@ export function Footer() {
             <h3 className="text-lg font-semibold">Supporto</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <a href="#" className="flex items-center gap-2 text-gray-400 hover:text-purple-400">
+                <a href="mailto:supporto@ludopathyland.com" className="flex items-center gap-2 text-gray-400 hover:text-purple-400">
                   <Mail className="h-4 w-4" />
                   supporto@ludopathyland.com
                 </a>
               </li>
               <li>
-                <a href="#" className="flex items-center gap-2 text-gray-400 hover:text-purple-400">
+                <a href="tel:+390212345678" className="flex items-center gap-2 text-gray-400 hover:text-purple-400">
                   <Phone className="h-4 w-4" />
                   +39 02 1234567
                 </a>
@@ -92,9 +93,9 @@ export function Footer() {
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-400 md:flex-row">
             <p>&copy; 2025 Ludopathyland. Tutti i diritti riservati.</p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-purple-400">Privacy Policy</a>
-              <a href="#" className="hover:text-purple-400">Termini di Servizio</a>
-              <a href="#" className="hover:text-purple-400">Gioco Responsabile</a>
+              <Link to="/privacy-policy" className="hover:text-purple-400">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="hover:text-purple-400">Termini di Servizio</Link>
+              <Link to="/responsible-gaming" className="hover:text-purple-400">Gioco Responsabile</Link>
             </div>
           </div>
         </div>

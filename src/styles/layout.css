@@ -1,0 +1,102 @@
+/* Layout utilities */
+.page-section {
+  @apply py-20 pt-32 px-4 sm:px-6 lg:px-8;
+}
+
+.page-section:last-of-type {
+  @apply pb-20;
+}
+
+.page-container {
+  @apply mx-auto max-w-7xl w-full;
+}
+
+.section-title {
+  @apply text-2xl sm:text-3xl lg:text-4xl font-bold mb-2;
+}
+
+.section-subtitle {
+  @apply text-sm sm:text-base text-gray-400 mb-6 sm:mb-8;
+}
+
+/* Mobile-first card styles */
+.card {
+  @apply bg-white/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 backdrop-blur-sm hover:bg-white/10 transition-all;
+}
+
+/* Responsive form styles */
+.form-input {
+  @apply w-full rounded-lg bg-gray-800/50 px-4 sm:px-6 py-2 sm:py-3 text-white backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500;
+}
+
+.form-select {
+  @apply w-full rounded-lg bg-gray-800/50 px-4 sm:px-6 py-2 sm:py-3 text-white backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500 [&>option]:bg-gray-900;
+}
+
+/* Responsive search input */
+.search-input {
+  @apply w-full rounded-lg bg-gray-800/50 pl-12 pr-4 py-2 sm:py-3 text-white placeholder-gray-400 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500;
+}
+
+/* Responsive grid layouts */
+.grid-cards {
+  @apply grid gap-4 sm:gap-6 lg:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+/* Touch-friendly buttons */
+.touch-button {
+  @apply min-h-[44px] min-w-[44px] flex items-center justify-center;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  @apply fixed inset-0 top-[73px] bg-gray-900/95 backdrop-blur-lg z-50;
+}
+
+.mobile-menu-link {
+  @apply block p-4 hover:bg-white/5 rounded-lg transition-colors min-h-[44px] flex items-center;
+}
+
+/* Responsive typography */
+.text-responsive {
+  @apply text-sm sm:text-base lg:text-lg;
+}
+
+.heading-responsive {
+  @apply text-xl sm:text-2xl lg:text-3xl font-bold;
+}
+
+/* Touch-friendly spacing */
+.touch-spacing {
+  @apply space-y-4 sm:space-y-6;
+}
+
+/* Safe area insets */
+.safe-area-inset {
+  @apply px-4 sm:px-6 lg:px-8 py-4 sm:py-6;
+}
+
+/* Responsive images */
+.responsive-image {
+  @apply w-full h-auto aspect-video object-cover rounded-lg;
+}
+
+/* Loading states */
+.loading-skeleton {
+  @apply animate-pulse bg-gray-800/50 rounded-lg;
+}
+
+/* Responsive containers */
+.container-responsive {
+  @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Mobile-first navigation */
+.nav-responsive {
+  @apply flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8;
+}
+
+/* Touch-friendly form elements */
+.form-touch {
+  @apply min-h-[44px] px-4 rounded-lg;
+}

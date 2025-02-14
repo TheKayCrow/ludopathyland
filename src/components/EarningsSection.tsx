@@ -9,7 +9,7 @@ export function EarningsSection() {
         <p className="text-gray-400 mb-8">Metodi legali e verificati per guadagnare online</p>
         
         <div className="grid gap-6 md:grid-cols-3">
-          {earningMethods.map((method, index) => (
+          {earningMethods.slice(0, 3).map((method, index) => (
             <div key={index} className="bg-white/5 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all">
               <h3 className="text-xl font-bold mb-4">{method.title}</h3>
               <ul className="space-y-2 mb-6">

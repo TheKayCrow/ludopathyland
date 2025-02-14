@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "casinos": "Casinos",
+    "guides": "Anleitungen",
+    "strategies": "Strategien",
+    "banking": "Zahlungen",
+    "earnings": "Verdienst",
+    "news": "Neuigkeiten",
+    "login": "Anmelden",
+    "register": "Registrieren"
+  },
+  "home": {
+    "hero": {
+      "title": "Willkommen bei",
+      "subtitle": "Ihr umfassender Leitfaden für Online-Casinos, Strategien und intelligentes Verdienen",
+      "search": "Casinos, Boni oder Anleitungen suchen..."
+    }
+  },
+  "buttons": {
+    "getBonus": "Bonus Erhalten",
+    "review": "Bewertung",
+    "readMore": "Mehr Lesen",
+    "learnMore": "Mehr Erfahren",
+    "startNow": "Jetzt Starten",
+    "details": "Mehr Details",
+    "readGuide": "Anleitung Lesen",
+    "readArticle": "Artikel Lesen",
+    "subscribe": "Abonnieren",
+    "accept": "Akzeptieren",
+    "acceptAll": "Alle Akzeptieren",
+    "acceptNecessary": "Notwendige Akzeptieren",
+    "understood": "Verstanden",
+    "close": "Schließen"
+  }
+}

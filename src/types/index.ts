@@ -4,4 +4,5 @@ export interface Casino {
   bonus: string;
   image: string;
   features: string[];
+  affiliateLink: string;
 }
