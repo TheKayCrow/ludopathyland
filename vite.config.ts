@@ -3,12 +3,11 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Ensure base URL is set correctly
+  base: '/', // Changed from Netlify URL to relative path
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
-    // Optimize build for production
     rollupOptions: {
       output: {
         manualChunks: {
@@ -18,13 +17,10 @@ export default defineConfig({
         }
       }
     },
-    // Optimize chunk size
     chunkSizeWarningLimit: 1000,
-    // Enable minification with esbuild instead of terser for better performance
     minify: 'esbuild',
     target: 'esnext'
   },
-  // Optimize dependencies
   optimizeDeps: {
     include: [
       'react',
@@ -38,5 +34,9 @@ export default defineConfig({
       'clsx',
       'tailwind-merge'
     ]
+  },
+  server: {
+    host: '0.0.0.0',
+    port: 3000
   }
 });

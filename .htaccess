@@ -17,11 +17,27 @@ AddHandler application/x-httpd-php82 .php
 
     # Rewrite all other requests to index.html
     RewriteRule ^ index.html [L]
+
+    # Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # www to non-www redirect
+    RewriteCond %{HTTP_HOST} ^www\.ludopathyland\.com [NC]
+    RewriteRule ^(.*)$ https://ludopathyland.com/$1 [L,R=301]
 </IfModule>
 
 # Enable CORS
 <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
+    
+    # Security headers
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>
 
 # Enable Gzip compression
@@ -58,21 +74,6 @@ AddHandler application/x-httpd-php82 .php
     # Others
     ExpiresByType application/pdf "access plus 1 month"
     ExpiresByType application/x-shockwave-flash "access plus 1 month"
-</IfModule>
-
-# Security headers
-<IfModule mod_headers.c>
-    # Protect against XSS attacks
-    Header set X-XSS-Protection "1; mode=block"
-    
-    # Prevent MIME-type sniffing
-    Header set X-Content-Type-Options "nosniff"
-    
-    # Prevent clickjacking
-    Header set X-Frame-Options "SAMEORIGIN"
-    
-    # Enable HSTS
-    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 </IfModule>
 
 # Prevent directory listing

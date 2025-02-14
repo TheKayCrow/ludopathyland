@@ -8,6 +8,8 @@ import { BlogSection } from '../components/BlogSection';
 import { BankingSection } from '../components/BankingSection';
 import { featuredCasinos } from '../data/casinos';
 import { Button } from '../components/Button';
+import { SearchBar } from '../components/SearchBar';
+import { ComparisonFilters } from '../components/ComparisonFilters';
 
 export function Home() {
   const { t } = useTranslation();
@@ -17,6 +19,13 @@ export function Home() {
     bonus: 'all',
     payment: 'all'
   });
+
+  const handleFilterChange = (type: string, value: string) => {
+    setSelectedFilters(prev => ({
+      ...prev,
+      [type]: value
+    }));
+  };
 
   return (
     <main>
@@ -36,50 +45,17 @@ export function Home() {
             
             {/* Search and Filters */}
             <div className="mt-8 mx-auto max-w-2xl">
-              <div className="relative">
-                <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
-                <input
-                  type="text"
-                  placeholder={t('home.hero.search')}
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full rounded-full bg-gray-800/50 pl-12 pr-4 py-3 text-white placeholder-gray-400 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
-                />
-              </div>
+              <SearchBar 
+                value={searchQuery}
+                onChange={setSearchQuery}
+                placeholder={t('home.hero.search')}
+              />
               
-              <div className="mt-4 flex flex-wrap justify-center gap-4">
-                <select
-                  value={selectedFilters.rating}
-                  onChange={(e) => setSelectedFilters({...selectedFilters, rating: e.target.value})}
-                  className="flex-1 min-w-[200px] max-w-[250px] rounded-full bg-gray-800/50 px-6 py-3 text-white backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500 [&>option]:bg-gray-900"
-                >
-                  <option value="all">Valutazione</option>
-                  <option value="5">5 stelle</option>
-                  <option value="4">4+ stelle</option>
-                  <option value="3">3+ stelle</option>
-                </select>
-                
-                <select
-                  value={selectedFilters.bonus}
-                  onChange={(e) => setSelectedFilters({...selectedFilters, bonus: e.target.value})}
-                  className="flex-1 min-w-[200px] max-w-[250px] rounded-full bg-gray-800/50 px-6 py-3 text-white backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500 [&>option]:bg-gray-900"
-                >
-                  <option value="all">Tipo Bonus</option>
-                  <option value="deposit">Bonus Deposito</option>
-                  <option value="spins">Giri Gratis</option>
-                  <option value="cashback">Cashback</option>
-                </select>
-                
-                <select
-                  value={selectedFilters.payment}
-                  onChange={(e) => setSelectedFilters({...selectedFilters, payment: e.target.value})}
-                  className="flex-1 min-w-[200px] max-w-[250px] rounded-full bg-gray-800/50 px-6 py-3 text-white backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500 [&>option]:bg-gray-900"
-                >
-                  <option value="all">Metodo Pagamento</option>
-                  <option value="card">Carta</option>
-                  <option value="bank">Bonifico</option>
-                  <option value="crypto">Crypto</option>
-                </select>
+              <div className="mt-4">
+                <ComparisonFilters 
+                  filters={selectedFilters}
+                  onFilterChange={handleFilterChange}
+                />
               </div>
             </div>
           </div>

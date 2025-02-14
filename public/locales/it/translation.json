@@ -9,6 +9,140 @@
     "login": "Accedi",
     "register": "Registrati"
   },
+  "search": {
+    "placeholder": "Cerca...",
+    "filters": {
+      "rating": "Valutazione",
+      "bonus": "Tipo di Bonus",
+      "payment": "Metodo di Pagamento"
+    }
+  },
+  "cookies": {
+    "message": "Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Continuando a navigare, accetti la nostra",
+    "privacyPolicy": "Privacy Policy",
+    "settings": "Impostazioni Cookie"
+  },
+  "comparison": {
+    "filters": {
+      "all": "Tutti",
+      "rating": {
+        "label": "Valutazione",
+        "5stars": "5 stelle",
+        "4plusStars": "4+ stelle",
+        "3plusStars": "3+ stelle"
+      },
+      "bonus": {
+        "label": "Tipo di Bonus",
+        "deposit": "Bonus Deposito",
+        "spins": "Giri Gratis",
+        "cashback": "Cashback"
+      },
+      "payment": {
+        "label": "Metodo di Pagamento",
+        "card": "Carta",
+        "bank": "Bonifico",
+        "crypto": "Crypto"
+      }
+    }
+  },
+  "features": {
+    "casino": {
+      "liveBetting": "Scommesse Live",
+      "cryptoFriendly": "Crypto Friendly",
+      "fastWithdrawals": "Prelievi Rapidi",
+      "mobileApp": "App Mobile",
+      "support247": "Supporto 24/7",
+      "fastPayments": "Pagamenti Veloci",
+      "games": "500+ Giochi",
+      "mobileFriendly": "Compatibile Mobile",
+      "exclusiveGames": "Giochi Esclusivi",
+      "weeklyPromotions": "Promozioni Settimanali",
+      "loyaltyRewards": "Premi Fedeltà",
+      "liveChat": "Chat Live"
+    },
+    "banking": {
+      "fees": "Commissioni",
+      "timing": "Tempistiche",
+      "limits": "Limiti",
+      "advantages": "Vantaggi",
+      "disadvantages": "Svantaggi",
+      "instant": "Istantaneo",
+      "sameDay": "Stesso Giorno",
+      "oneToThreeDays": "1-3 Giorni",
+      "secureTransactions": "Transazioni Sicure",
+      "widelyAccepted": "Ampiamente Accettato",
+      "lowFees": "Basse Commissioni",
+      "highLimits": "Limiti Alti"
+    },
+    "earnings": {
+      "potential": "Potenziale",
+      "difficulty": "Difficoltà",
+      "timeRequired": "Tempo Richiesto",
+      "requirements": "Requisiti",
+      "features": "Caratteristiche",
+      "passive": "Passivo",
+      "active": "Attivo",
+      "mixed": "Misto",
+      "easy": "Facile",
+      "medium": "Medio",
+      "hard": "Difficile",
+      "fullTime": "Tempo Pieno",
+      "partTime": "Part-Time",
+      "flexible": "Flessibile"
+    }
+  },
+  "guides": {
+    "categories": {
+      "beginner": "Per Principianti",
+      "advanced": "Avanzato",
+      "expert": "Esperto"
+    },
+    "difficulty": {
+      "easy": "Facile",
+      "medium": "Medio",
+      "hard": "Difficile"
+    },
+    "readTime": "Tempo di lettura",
+    "requirements": "Requisiti",
+    "features": "Caratteristiche"
+  },
+  "crypto": {
+    "title": "Guadagni Crypto",
+    "subtitle": "Esplora diverse strategie per guadagnare nel mondo delle criptovalute",
+    "methods": {
+      "trading": "Trading",
+      "staking": "Staking",
+      "mining": "Mining"
+    },
+    "metrics": {
+      "potential": "Potenziale",
+      "difficulty": "Difficoltà",
+      "timeRequired": "Tempo Richiesto"
+    }
+  },
+  "earnings": {
+    "categories": {
+      "passive": "Reddito Passivo",
+      "active": "Reddito Attivo",
+      "mixed": "Reddito Misto"
+    },
+    "metrics": {
+      "potential": "Potenziale di Guadagno",
+      "difficulty": "Livello di Difficoltà",
+      "timeNeeded": "Tempo Necessario"
+    }
+  },
+  "news": {
+    "categories": {
+      "industry": "News del Settore",
+      "technology": "Tecnologia",
+      "regulation": "Regolamentazione",
+      "strategy": "Strategia",
+      "crypto": "Crypto"
+    },
+    "readMore": "Leggi di Più",
+    "publishedOn": "Pubblicato il"
+  },
   "home": {
     "hero": {
       "title": "Benvenuto su",

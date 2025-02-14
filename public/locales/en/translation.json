@@ -16,6 +16,42 @@
       "search": "Search casinos, bonuses or guides..."
     }
   },
+  "search": {
+    "placeholder": "Search...",
+    "filters": {
+      "rating": "Rating",
+      "bonus": "Bonus Type",
+      "payment": "Payment Method"
+    }
+  },
+  "cookies": {
+    "message": "We use cookies to improve your experience on our site. By continuing to browse, you accept our",
+    "privacyPolicy": "Privacy Policy",
+    "settings": "Cookie Settings"
+  },
+  "comparison": {
+    "filters": {
+      "all": "All",
+      "rating": {
+        "label": "Rating",
+        "5stars": "5 stars",
+        "4plusStars": "4+ stars",
+        "3plusStars": "3+ stars"
+      },
+      "bonus": {
+        "label": "Bonus Type",
+        "deposit": "Deposit Bonus",
+        "spins": "Free Spins",
+        "cashback": "Cashback"
+      },
+      "payment": {
+        "label": "Payment Method",
+        "card": "Card",
+        "bank": "Bank Transfer",
+        "crypto": "Crypto"
+      }
+    }
+  },
   "sections": {
     "casinos": {
       "title": "Featured Casinos",
@@ -37,6 +73,58 @@
       "title": "Blog and News",
       "subtitle": "Articles, guides and updates from the online casino world"
     }
+  },
+  "guides": {
+    "categories": {
+      "beginner": "For Beginners",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    },
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    },
+    "readTime": "Read time",
+    "requirements": "Requirements",
+    "features": "Features"
+  },
+  "crypto": {
+    "title": "Crypto Earnings",
+    "subtitle": "Explore different strategies to earn in the crypto world",
+    "methods": {
+      "trading": "Trading",
+      "staking": "Staking",
+      "mining": "Mining"
+    },
+    "metrics": {
+      "potential": "Potential",
+      "difficulty": "Difficulty",
+      "timeRequired": "Time Required"
+    }
+  },
+  "earnings": {
+    "categories": {
+      "passive": "Passive Income",
+      "active": "Active Income",
+      "mixed": "Mixed Income"
+    },
+    "metrics": {
+      "potential": "Earning Potential",
+      "difficulty": "Difficulty Level",
+      "timeNeeded": "Time Needed"
+    }
+  },
+  "news": {
+    "categories": {
+      "industry": "Industry News",
+      "technology": "Technology",
+      "regulation": "Regulation",
+      "strategy": "Strategy",
+      "crypto": "Crypto"
+    },
+    "readMore": "Read More",
+    "publishedOn": "Published on"
   },
   "buttons": {
     "getBonus": "Get Bonus",

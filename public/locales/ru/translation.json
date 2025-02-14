@@ -9,6 +9,140 @@
     "login": "Войти",
     "register": "Регистрация"
   },
+  "search": {
+    "placeholder": "Поиск...",
+    "filters": {
+      "rating": "Рейтинг",
+      "bonus": "Тип Бонуса",
+      "payment": "Способ Оплаты"
+    }
+  },
+  "cookies": {
+    "message": "Мы используем файлы cookie для улучшения вашего опыта на нашем сайте. Продолжая просмотр, вы принимаете нашу",
+    "privacyPolicy": "Политику Конфиденциальности",
+    "settings": "Настройки Cookie"
+  },
+  "comparison": {
+    "filters": {
+      "all": "Все",
+      "rating": {
+        "label": "Рейтинг",
+        "5stars": "5 звезд",
+        "4plusStars": "4+ звезды",
+        "3plusStars": "3+ звезды"
+      },
+      "bonus": {
+        "label": "Тип Бонуса",
+        "deposit": "Бонус на Депозит",
+        "spins": "Бесплатные Вращения",
+        "cashback": "Кэшбэк"
+      },
+      "payment": {
+        "label": "Способ Оплаты",
+        "card": "Карта",
+        "bank": "Банковский Перевод",
+        "crypto": "Крипто"
+      }
+    }
+  },
+  "features": {
+    "casino": {
+      "liveBetting": "Ставки в Прямом Эфире",
+      "cryptoFriendly": "Поддержка Крипто",
+      "fastWithdrawals": "Быстрые Выводы",
+      "mobileApp": "Мобильное Приложение",
+      "support247": "Поддержка 24/7",
+      "fastPayments": "Быстрые Платежи",
+      "games": "500+ Игр",
+      "mobileFriendly": "Адаптировано для Мобильных",
+      "exclusiveGames": "Эксклюзивные Игры",
+      "weeklyPromotions": "Еженедельные Акции",
+      "loyaltyRewards": "Программа Лояльности",
+      "liveChat": "Живой Чат"
+    },
+    "banking": {
+      "fees": "Комиссии",
+      "timing": "Время Обработки",
+      "limits": "Лимиты",
+      "advantages": "Преимущества",
+      "disadvantages": "Недостатки",
+      "instant": "Мгновенно",
+      "sameDay": "В Тот же День",
+      "oneToThreeDays": "1-3 Дня",
+      "secureTransactions": "Безопасные Транзакции",
+      "widelyAccepted": "Широко Принимается",
+      "lowFees": "Низкие Комиссии",
+      "highLimits": "Высокие Лимиты"
+    },
+    "earnings": {
+      "potential": "Потенциал",
+      "difficulty": "Сложность",
+      "timeRequired": "Требуемое Время",
+      "requirements": "Требования",
+      "features": "Особенности",
+      "passive": "Пассивный",
+      "active": "Активный",
+      "mixed": "Смешанный",
+      "easy": "Легко",
+      "medium": "Средне",
+      "hard": "Сложно",
+      "fullTime": "Полный День",
+      "partTime": "Частичная Занятость",
+      "flexible": "Гибкий График"
+    }
+  },
+  "guides": {
+    "categories": {
+      "beginner": "Для Начинающих",
+      "advanced": "Продвинутый",
+      "expert": "Эксперт"
+    },
+    "difficulty": {
+      "easy": "Легко",
+      "medium": "Средне",
+      "hard": "Сложно"
+    },
+    "readTime": "Время чтения",
+    "requirements": "Требования",
+    "features": "Особенности"
+  },
+  "crypto": {
+    "title": "Заработок на Крипто",
+    "subtitle": "Исследуйте различные стратегии заработка в мире криптовалют",
+    "methods": {
+      "trading": "Трейдинг",
+      "staking": "Стейкинг",
+      "mining": "Майнинг"
+    },
+    "metrics": {
+      "potential": "Потенциал",
+      "difficulty": "Сложность",
+      "timeRequired": "Требуемое Время"
+    }
+  },
+  "earnings": {
+    "categories": {
+      "passive": "Пассивный Доход",
+      "active": "Активный Доход",
+      "mixed": "Смешанный Доход"
+    },
+    "metrics": {
+      "potential": "Потенциал Заработка",
+      "difficulty": "Уровень Сложности",
+      "timeNeeded": "Необходимое Время"
+    }
+  },
+  "news": {
+    "categories": {
+      "industry": "Новости Индустрии",
+      "technology": "Технологии",
+      "regulation": "Регулирование",
+      "strategy": "Стратегия",
+      "crypto": "Крипто"
+    },
+    "readMore": "Читать Далее",
+    "publishedOn": "Опубликовано"
+  },
   "home": {
     "hero": {
       "title": "Добро пожаловать в",
