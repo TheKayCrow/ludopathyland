@@ -16,6 +16,8 @@ export function SEO({
   url = 'https://ludopathyland.com'
 }: SEOProps) {
   const fullTitle = title.includes('Ludopathyland') ? title : `${title} | Ludopathyland`;
+  const fullUrl = url.startsWith('http') ? url : `https://ludopathyland.com${url}`;
+  const fullImage = image.startsWith('http') ? image : `https://ludopathyland.com${image}`;
   
   return (
     <Helmet>
@@ -25,19 +27,19 @@ export function SEO({
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={fullUrl} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={fullImage} />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={url} />
+      <meta property="twitter:url" content={fullUrl} />
       <meta property="twitter:title" content={fullTitle} />
       <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={image} />
+      <meta property="twitter:image" content={fullImage} />
 
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={fullUrl} />
     </Helmet>
   );
 }

@@ -7,8 +7,8 @@
   @apply pb-20;
 }
 
-.page-container {
-  @apply mx-auto max-w-7xl w-full;
+.container-responsive {
+  @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
 /* Enhanced section titles */
@@ -99,11 +99,6 @@
 /* Loading states */
 .loading-skeleton {
   @apply animate-pulse bg-gray-800/50 rounded-lg;
-}
-
-/* Responsive containers */
-.container-responsive {
-  @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
 /* Mobile-first navigation */

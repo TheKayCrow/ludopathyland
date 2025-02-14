@@ -9,183 +9,51 @@
     "login": "Anmelden",
     "register": "Registrieren"
   },
-  "search": {
-    "placeholder": "Suchen...",
-    "filters": {
-      "rating": "Bewertung",
-      "bonus": "Bonus-Typ",
-      "payment": "Zahlungsmethode"
-    }
-  },
-  "cookies": {
-    "message": "Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Durch die weitere Nutzung stimmen Sie unserer",
-    "privacyPolicy": "Datenschutzerklärung",
-    "settings": "Cookie-Einstellungen"
-  },
-  "comparison": {
-    "filters": {
-      "all": "Alle",
-      "rating": {
-        "label": "Bewertung",
-        "5stars": "5 Sterne",
-        "4plusStars": "4+ Sterne",
-        "3plusStars": "3+ Sterne"
+  "footer": {
+    "newsletter": {
+      "title": "Bleiben Sie Informiert",
+      "description": "Abonnieren Sie unseren Newsletter für exklusive Angebote, Anleitungen und Updates",
+      "placeholder": "Ihre E-Mail",
+      "button": "Abonnieren"
+    },
+    "description": "Ihre vertrauenswürdige Quelle für Vergleiche, Bewertungen und Anleitungen in der Online-Casino-Welt.",
+    "quickLinks": {
+      "title": "Schnellzugriff",
+      "casinoComparison": "Casino-Vergleich",
+      "paymentMethods": "Zahlungsmethoden",
+      "tipsAndStrategies": "Tipps & Strategien",
+      "onlineEarnings": "Online-Verdienst",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Support",
+      "email": {
+        "label": "E-Mail",
+        "value": "support@ludopathyland.com"
       },
-      "bonus": {
-        "label": "Bonus-Typ",
-        "deposit": "Einzahlungsbonus",
-        "spins": "Freispiele",
-        "cashback": "Cashback"
+      "phone": {
+        "label": "Telefon",
+        "value": "+39 02 1234567"
       },
-      "payment": {
-        "label": "Zahlungsmethode",
-        "card": "Karte",
-        "bank": "Banküberweisung",
-        "crypto": "Krypto"
+      "location": {
+        "label": "Standort",
+        "value": "Mailand, Italien"
+      }
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "privacy": "Datenschutzerklärung",
+      "terms": "Nutzungsbedingungen",
+      "responsibleGaming": "Verantwortungsvolles Spielen"
+    },
+    "bottom": {
+      "copyright": "© 2025 Ludopathyland. Alle Rechte vorbehalten.",
+      "links": {
+        "privacy": "Datenschutz",
+        "terms": "Bedingungen",
+        "responsibleGaming": "Verantwortungsvolles Spielen",
+        "siteMap": "Sitemap"
       }
     }
-  },
-  "features": {
-    "casino": {
-      "liveBetting": "Live-Wetten",
-      "cryptoFriendly": "Krypto-Freundlich",
-      "fastWithdrawals": "Schnelle Auszahlungen",
-      "mobileApp": "Mobile App",
-      "support247": "24/7 Support",
-      "fastPayments": "Schnelle Zahlungen",
-      "games": "500+ Spiele",
-      "mobileFriendly": "Mobilfreundlich",
-      "exclusiveGames": "Exklusive Spiele",
-      "weeklyPromotions": "Wöchentliche Aktionen",
-      "loyaltyRewards": "Treuepunkte",
-      "liveChat": "Live-Chat"
-    },
-    "banking": {
-      "fees": "Gebühren",
-      "timing": "Bearbeitungszeit",
-      "limits": "Limits",
-      "advantages": "Vorteile",
-      "disadvantages": "Nachteile",
-      "instant": "Sofort",
-      "sameDay": "Am selben Tag",
-      "oneToThreeDays": "1-3 Tage",
-      "secureTransactions": "Sichere Transaktionen",
-      "widelyAccepted": "Weithin akzeptiert",
-      "lowFees": "Niedrige Gebühren",
-      "highLimits": "Hohe Limits"
-    },
-    "earnings": {
-      "potential": "Potenzial",
-      "difficulty": "Schwierigkeit",
-      "timeRequired": "Zeitaufwand",
-      "requirements": "Anforderungen",
-      "features": "Funktionen",
-      "passive": "Passiv",
-      "active": "Aktiv",
-      "mixed": "Gemischt",
-      "easy": "Einfach",
-      "medium": "Mittel",
-      "hard": "Schwer",
-      "fullTime": "Vollzeit",
-      "partTime": "Teilzeit",
-      "flexible": "Flexibel"
-    }
-  },
-  "guides": {
-    "categories": {
-      "beginner": "Für Anfänger",
-      "advanced": "Fortgeschritten",
-      "expert": "Experte"
-    },
-    "difficulty": {
-      "easy": "Einfach",
-      "medium": "Mittel",
-      "hard": "Schwer"
-    },
-    "readTime": "Lesezeit",
-    "requirements": "Voraussetzungen",
-    "features": "Funktionen"
-  },
-  "crypto": {
-    "title": "Krypto-Verdienst",
-    "subtitle": "Entdecken Sie verschiedene Strategien zum Verdienen in der Krypto-Welt",
-    "methods": {
-      "trading": "Trading",
-      "staking": "Staking",
-      "mining": "Mining"
-    },
-    "metrics": {
-      "potential": "Potenzial",
-      "difficulty": "Schwierigkeit",
-      "timeRequired": "Zeitaufwand"
-    }
-  },
-  "earnings": {
-    "categories": {
-      "passive": "Passives Einkommen",
-      "active": "Aktives Einkommen",
-      "mixed": "Gemischtes Einkommen"
-    },
-    "metrics": {
-      "potential": "Verdienstpotenzial",
-      "difficulty": "Schwierigkeitsgrad",
-      "timeNeeded": "Benötigte Zeit"
-    }
-  },
-  "news": {
-    "categories": {
-      "industry": "Branchennews",
-      "technology": "Technologie",
-      "regulation": "Regulierung",
-      "strategy": "Strategie",
-      "crypto": "Krypto"
-    },
-    "readMore": "Weiterlesen",
-    "publishedOn": "Veröffentlicht am"
-  },
-  "home": {
-    "hero": {
-      "title": "Willkommen bei",
-      "subtitle": "Ihr umfassender Leitfaden für Online-Casinos, Strategien und intelligentes Verdienen",
-      "search": "Casinos, Boni oder Anleitungen suchen..."
-    }
-  },
-  "sections": {
-    "casinos": {
-      "title": "Ausgewählte Casinos",
-      "subtitle": "Die besten Online-Casinos für Sie ausgewählt"
-    },
-    "banking": {
-      "title": "Zahlungsmethoden",
-      "subtitle": "Vergleichen Sie die besten Zahlungsmethoden für Online-Casinos"
-    },
-    "strategies": {
-      "title": "Tipps und Strategien",
-      "subtitle": "Detaillierte Anleitungen und Gewinnstrategien für verantwortungsvolles Spielen"
-    },
-    "earnings": {
-      "title": "Online Verdienst",
-      "subtitle": "Legale und verifizierte Methoden zum Online-Verdienen"
-    },
-    "blog": {
-      "title": "Blog und Neuigkeiten",
-      "subtitle": "Artikel, Anleitungen und Updates aus der Online-Casino-Welt"
-    }
-  },
-  "buttons": {
-    "getBonus": "Bonus Erhalten",
-    "review": "Bewertung",
-    "readMore": "Mehr Lesen",
-    "learnMore": "Mehr Erfahren",
-    "startNow": "Jetzt Starten",
-    "details": "Mehr Details",
-    "readGuide": "Anleitung Lesen",
-    "readArticle": "Artikel Lesen",
-    "subscribe": "Abonnieren",
-    "accept": "Akzeptieren",
-    "acceptAll": "Alle Akzeptieren",
-    "acceptNecessary": "Notwendige Akzeptieren",
-    "understood": "Verstanden",
-    "close": "Schließen"
   }
 }

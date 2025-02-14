@@ -22,7 +22,7 @@ AddHandler application/x-httpd-php82 .php
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # www to non-www redirect (rimuovi o modifica in base alle tue preferenze)
+    # www to non-www redirect
     RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
     RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 </IfModule>
@@ -38,6 +38,26 @@ AddHandler application/x-httpd-php82 .php
     Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
     Header set Referrer-Policy "strict-origin-when-cross-origin"
     Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    # Cache Control for assets
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    
+    <FilesMatch "\.(json)$">
+        Header set Cache-Control "public, max-age=3600"
+    </FilesMatch>
+
+    # No cache for HTML
+    <FilesMatch "\.html$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
 </IfModule>
 
 # Enable Gzip compression
@@ -67,9 +87,9 @@ AddHandler application/x-httpd-php82 .php
     ExpiresByType image/x-icon "access plus 1 year"
 
     # CSS, JavaScript
-    ExpiresByType text/css "access plus 1 month"
-    ExpiresByType text/javascript "access plus 1 month"
-    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
 
     # Others
     ExpiresByType application/pdf "access plus 1 month"

@@ -5,12 +5,23 @@ export default {
     extend: {
       colors: {
         pastel: {
-          purple: '#E0B0FF',
-          pink: '#FFB0E0',
-          blue: '#B0E0FF',
-          green: '#B0FFB0',
-          yellow: '#FFE0B0',
-          red: '#FFB0B0'
+          purple: '#B388FF',
+          pink: '#FF80AB',
+          blue: '#82B1FF',
+          green: '#69F0AE',
+          yellow: '#FFD740',
+          red: '#FF5252'
+        },
+        gray: {
+          900: '#121212',
+          800: '#1E1E1E',
+          700: '#2D2D2D',
+          600: '#404040',
+          500: '#525252',
+          400: '#737373',
+          300: '#A3A3A3',
+          200: '#E5E5E5',
+          100: '#F5F5F5',
         }
       },
       animation: {
@@ -52,8 +63,8 @@ export default {
         },
       },
       boxShadow: {
-        'pastel': '0 4px 14px 0 rgba(224, 176, 255, 0.3)',
-        'pastel-lg': '0 10px 25px -3px rgba(224, 176, 255, 0.3)',
+        'pastel': '0 4px 14px 0 rgba(179, 136, 255, 0.4)',
+        'pastel-lg': '0 10px 25px -3px rgba(179, 136, 255, 0.4)',
       },
       backgroundImage: {
         'pastel-gradient': 'linear-gradient(45deg, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 100%)',

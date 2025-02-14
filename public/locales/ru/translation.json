@@ -3,189 +3,57 @@
     "casinos": "Казино",
     "guides": "Руководства",
     "strategies": "Стратегии",
-    "banking": "Банкинг",
+    "banking": "Платежи",
     "earnings": "Заработок",
     "news": "Новости",
     "login": "Войти",
     "register": "Регистрация"
   },
-  "search": {
-    "placeholder": "Поиск...",
-    "filters": {
-      "rating": "Рейтинг",
-      "bonus": "Тип Бонуса",
-      "payment": "Способ Оплаты"
-    }
-  },
-  "cookies": {
-    "message": "Мы используем файлы cookie для улучшения вашего опыта на нашем сайте. Продолжая просмотр, вы принимаете нашу",
-    "privacyPolicy": "Политику Конфиденциальности",
-    "settings": "Настройки Cookie"
-  },
-  "comparison": {
-    "filters": {
-      "all": "Все",
-      "rating": {
-        "label": "Рейтинг",
-        "5stars": "5 звезд",
-        "4plusStars": "4+ звезды",
-        "3plusStars": "3+ звезды"
+  "footer": {
+    "newsletter": {
+      "title": "Будьте в Курсе",
+      "description": "Подпишитесь на нашу рассылку, чтобы получать эксклюзивные предложения, руководства и обновления",
+      "placeholder": "Ваш email",
+      "button": "Подписаться"
+    },
+    "description": "Ваш надежный источник сравнений, обзоров и руководств в мире онлайн-казино.",
+    "quickLinks": {
+      "title": "Быстрые Ссылки",
+      "casinoComparison": "Сравнение Казино",
+      "paymentMethods": "Способы Оплаты",
+      "tipsAndStrategies": "Советы и Стратегии",
+      "onlineEarnings": "Онлайн Заработок",
+      "blog": "Блог"
+    },
+    "support": {
+      "title": "Поддержка",
+      "email": {
+        "label": "Email",
+        "value": "support@ludopathyland.com"
       },
-      "bonus": {
-        "label": "Тип Бонуса",
-        "deposit": "Бонус на Депозит",
-        "spins": "Бесплатные Вращения",
-        "cashback": "Кэшбэк"
+      "phone": {
+        "label": "Телефон",
+        "value": "+39 02 1234567"
       },
-      "payment": {
-        "label": "Способ Оплаты",
-        "card": "Карта",
-        "bank": "Банковский Перевод",
-        "crypto": "Крипто"
+      "location": {
+        "label": "Адрес",
+        "value": "Милан, Италия"
+      }
+    },
+    "legal": {
+      "title": "Правовая Информация",
+      "privacy": "Политика Конфиденциальности",
+      "terms": "Условия Использования",
+      "responsibleGaming": "Ответственная Игра"
+    },
+    "bottom": {
+      "copyright": "© 2025 Ludopathyland. Все права защищены.",
+      "links": {
+        "privacy": "Конфиденциальность",
+        "terms": "Условия",
+        "responsibleGaming": "Ответственная Игра",
+        "siteMap": "Карта Сайта"
       }
     }
-  },
-  "features": {
-    "casino": {
-      "liveBetting": "Ставки в Прямом Эфире",
-      "cryptoFriendly": "Поддержка Крипто",
-      "fastWithdrawals": "Быстрые Выводы",
-      "mobileApp": "Мобильное Приложение",
-      "support247": "Поддержка 24/7",
-      "fastPayments": "Быстрые Платежи",
-      "games": "500+ Игр",
-      "mobileFriendly": "Адаптировано для Мобильных",
-      "exclusiveGames": "Эксклюзивные Игры",
-      "weeklyPromotions": "Еженедельные Акции",
-      "loyaltyRewards": "Программа Лояльности",
-      "liveChat": "Живой Чат"
-    },
-    "banking": {
-      "fees": "Комиссии",
-      "timing": "Время Обработки",
-      "limits": "Лимиты",
-      "advantages": "Преимущества",
-      "disadvantages": "Недостатки",
-      "instant": "Мгновенно",
-      "sameDay": "В Тот же День",
-      "oneToThreeDays": "1-3 Дня",
-      "secureTransactions": "Безопасные Транзакции",
-      "widelyAccepted": "Широко Принимается",
-      "lowFees": "Низкие Комиссии",
-      "highLimits": "Высокие Лимиты"
-    },
-    "earnings": {
-      "potential": "Потенциал",
-      "difficulty": "Сложность",
-      "timeRequired": "Требуемое Время",
-      "requirements": "Требования",
-      "features": "Особенности",
-      "passive": "Пассивный",
-      "active": "Активный",
-      "mixed": "Смешанный",
-      "easy": "Легко",
-      "medium": "Средне",
-      "hard": "Сложно",
-      "fullTime": "Полный День",
-      "partTime": "Частичная Занятость",
-      "flexible": "Гибкий График"
-    }
-  },
-  "guides": {
-    "categories": {
-      "beginner": "Для Начинающих",
-      "advanced": "Продвинутый",
-      "expert": "Эксперт"
-    },
-    "difficulty": {
-      "easy": "Легко",
-      "medium": "Средне",
-      "hard": "Сложно"
-    },
-    "readTime": "Время чтения",
-    "requirements": "Требования",
-    "features": "Особенности"
-  },
-  "crypto": {
-    "title": "Заработок на Крипто",
-    "subtitle": "Исследуйте различные стратегии заработка в мире криптовалют",
-    "methods": {
-      "trading": "Трейдинг",
-      "staking": "Стейкинг",
-      "mining": "Майнинг"
-    },
-    "metrics": {
-      "potential": "Потенциал",
-      "difficulty": "Сложность",
-      "timeRequired": "Требуемое Время"
-    }
-  },
-  "earnings": {
-    "categories": {
-      "passive": "Пассивный Доход",
-      "active": "Активный Доход",
-      "mixed": "Смешанный Доход"
-    },
-    "metrics": {
-      "potential": "Потенциал Заработка",
-      "difficulty": "Уровень Сложности",
-      "timeNeeded": "Необходимое Время"
-    }
-  },
-  "news": {
-    "categories": {
-      "industry": "Новости Индустрии",
-      "technology": "Технологии",
-      "regulation": "Регулирование",
-      "strategy": "Стратегия",
-      "crypto": "Крипто"
-    },
-    "readMore": "Читать Далее",
-    "publishedOn": "Опубликовано"
-  },
-  "home": {
-    "hero": {
-      "title": "Добро пожаловать в",
-      "subtitle": "Ваш полный путеводитель по онлайн-казино, стратегиям и умному заработку",
-      "search": "Поиск казино, бонусов или руководств..."
-    }
-  },
-  "sections": {
-    "casinos": {
-      "title": "Рекомендуемые Казино",
-      "subtitle": "Лучшие онлайн-казино, отобранные для вас"
-    },
-    "banking": {
-      "title": "Способы Оплаты",
-      "subtitle": "Сравните лучшие способы оплаты для онлайн-казино"
-    },
-    "strategies": {
-      "title": "Советы и Стратегии",
-      "subtitle": "Подробные руководства и выигрышные стратегии для ответственной игры"
-    },
-    "earnings": {
-      "title": "Онлайн Заработок",
-      "subtitle": "Легальные и проверенные способы заработка онлайн"
-    },
-    "blog": {
-      "title": "Блог и Новости",
-      "subtitle": "Статьи, руководства и обновления из мира онлайн-казино"
-    }
-  },
-  "buttons": {
-    "getBonus": "Получить Бонус",
-    "review": "Обзор",
-    "readMore": "Читать Далее",
-    "learnMore": "Узнать Больше",
-    "startNow": "Начать Сейчас",
-    "details": "Подробнее",
-    "readGuide": "Читать Руководство",
-    "readArticle": "Читать Статью",
-    "subscribe": "Подписаться",
-    "accept": "Принять",
-    "acceptAll": "Принять Все",
-    "acceptNecessary": "Принять Необходимые",
-    "understood": "Понятно",
-    "close": "Закрыть"
   }
 }

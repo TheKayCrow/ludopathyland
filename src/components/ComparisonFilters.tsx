@@ -12,12 +12,14 @@ interface ComparisonFiltersProps {
 export function ComparisonFilters({ onFilterChange, filters }: ComparisonFiltersProps) {
   const { t } = useTranslation();
 
+  const selectClassName = "flex-1 min-w-[200px] max-w-[200px] rounded-full bg-gray-800/50 px-6 py-3 text-white backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500 [&>option]:bg-gray-900 transition-colors hover:bg-gray-800/70";
+
   return (
-    <div className="flex flex-wrap justify-center gap-4">
+    <div className="flex flex-wrap justify-center items-center gap-4">
       <select
         value={filters.rating}
         onChange={(e) => onFilterChange('rating', e.target.value)}
-        className="flex-1 min-w-[200px] max-w-[250px] rounded-full bg-gray-800/50 px-6 py-3 text-white backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500 [&>option]:bg-gray-900"
+        className={selectClassName}
       >
         <option value="all">{t('comparison.filters.rating.label')}</option>
         <option value="5">{t('comparison.filters.rating.5stars')}</option>
@@ -28,7 +30,7 @@ export function ComparisonFilters({ onFilterChange, filters }: ComparisonFilters
       <select
         value={filters.bonus}
         onChange={(e) => onFilterChange('bonus', e.target.value)}
-        className="flex-1 min-w-[200px] max-w-[250px] rounded-full bg-gray-800/50 px-6 py-3 text-white backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500 [&>option]:bg-gray-900"
+        className={selectClassName}
       >
         <option value="all">{t('comparison.filters.bonus.label')}</option>
         <option value="deposit">{t('comparison.filters.bonus.deposit')}</option>
@@ -39,7 +41,7 @@ export function ComparisonFilters({ onFilterChange, filters }: ComparisonFilters
       <select
         value={filters.payment}
         onChange={(e) => onFilterChange('payment', e.target.value)}
-        className="flex-1 min-w-[200px] max-w-[250px] rounded-full bg-gray-800/50 px-6 py-3 text-white backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500 [&>option]:bg-gray-900"
+        className={selectClassName}
       >
         <option value="all">{t('comparison.filters.payment.label')}</option>
         <option value="card">{t('comparison.filters.payment.card')}</option>

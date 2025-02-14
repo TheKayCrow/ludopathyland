@@ -9,137 +9,51 @@
     "login": "Login",
     "register": "Register"
   },
-  "home": {
-    "hero": {
-      "title": "Welcome to",
-      "subtitle": "Your complete guide to online casinos, strategies and smart earnings",
-      "search": "Search casinos, bonuses or guides..."
-    }
-  },
-  "search": {
-    "placeholder": "Search...",
-    "filters": {
-      "rating": "Rating",
-      "bonus": "Bonus Type",
-      "payment": "Payment Method"
-    }
-  },
-  "cookies": {
-    "message": "We use cookies to improve your experience on our site. By continuing to browse, you accept our",
-    "privacyPolicy": "Privacy Policy",
-    "settings": "Cookie Settings"
-  },
-  "comparison": {
-    "filters": {
-      "all": "All",
-      "rating": {
-        "label": "Rating",
-        "5stars": "5 stars",
-        "4plusStars": "4+ stars",
-        "3plusStars": "3+ stars"
+  "footer": {
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to our newsletter to receive exclusive offers, guides and updates",
+      "placeholder": "Your email",
+      "button": "Subscribe"
+    },
+    "description": "Your trusted source for comparisons, reviews and guides in the online casino world.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "casinoComparison": "Casino Comparison",
+      "paymentMethods": "Payment Methods",
+      "tipsAndStrategies": "Tips & Strategies",
+      "onlineEarnings": "Online Earnings",
+      "blog": "Blog"
+    },
+    "support": {
+      "title": "Support",
+      "email": {
+        "label": "Email",
+        "value": "support@ludopathyland.com"
       },
-      "bonus": {
-        "label": "Bonus Type",
-        "deposit": "Deposit Bonus",
-        "spins": "Free Spins",
-        "cashback": "Cashback"
+      "phone": {
+        "label": "Phone",
+        "value": "+39 02 1234567"
       },
-      "payment": {
-        "label": "Payment Method",
-        "card": "Card",
-        "bank": "Bank Transfer",
-        "crypto": "Crypto"
+      "location": {
+        "label": "Location",
+        "value": "Milan, Italy"
+      }
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "responsibleGaming": "Responsible Gaming"
+    },
+    "bottom": {
+      "copyright": "© 2025 Ludopathyland. All rights reserved.",
+      "links": {
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "responsibleGaming": "Responsible Gaming",
+        "siteMap": "Site Map"
       }
     }
-  },
-  "sections": {
-    "casinos": {
-      "title": "Featured Casinos",
-      "subtitle": "The best online casinos selected for you"
-    },
-    "banking": {
-      "title": "Payment Methods",
-      "subtitle": "Compare the best payment methods for online casinos"
-    },
-    "strategies": {
-      "title": "Tips and Strategies",
-      "subtitle": "Detailed guides and winning strategies for responsible gaming"
-    },
-    "earnings": {
-      "title": "Online Earnings",
-      "subtitle": "Legal and verified methods to earn online"
-    },
-    "blog": {
-      "title": "Blog and News",
-      "subtitle": "Articles, guides and updates from the online casino world"
-    }
-  },
-  "guides": {
-    "categories": {
-      "beginner": "For Beginners",
-      "advanced": "Advanced",
-      "expert": "Expert"
-    },
-    "difficulty": {
-      "easy": "Easy",
-      "medium": "Medium",
-      "hard": "Hard"
-    },
-    "readTime": "Read time",
-    "requirements": "Requirements",
-    "features": "Features"
-  },
-  "crypto": {
-    "title": "Crypto Earnings",
-    "subtitle": "Explore different strategies to earn in the crypto world",
-    "methods": {
-      "trading": "Trading",
-      "staking": "Staking",
-      "mining": "Mining"
-    },
-    "metrics": {
-      "potential": "Potential",
-      "difficulty": "Difficulty",
-      "timeRequired": "Time Required"
-    }
-  },
-  "earnings": {
-    "categories": {
-      "passive": "Passive Income",
-      "active": "Active Income",
-      "mixed": "Mixed Income"
-    },
-    "metrics": {
-      "potential": "Earning Potential",
-      "difficulty": "Difficulty Level",
-      "timeNeeded": "Time Needed"
-    }
-  },
-  "news": {
-    "categories": {
-      "industry": "Industry News",
-      "technology": "Technology",
-      "regulation": "Regulation",
-      "strategy": "Strategy",
-      "crypto": "Crypto"
-    },
-    "readMore": "Read More",
-    "publishedOn": "Published on"
-  },
-  "buttons": {
-    "getBonus": "Get Bonus",
-    "review": "Review",
-    "readMore": "Read More",
-    "learnMore": "Learn More",
-    "startNow": "Start Now",
-    "details": "More Details",
-    "readGuide": "Read Guide",
-    "readArticle": "Read Article",
-    "subscribe": "Subscribe",
-    "accept": "Accept",
-    "acceptAll": "Accept All",
-    "acceptNecessary": "Accept Necessary",
-    "understood": "I Understand",
-    "close": "Close"
   }
 }
