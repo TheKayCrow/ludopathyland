@@ -1,17 +1,17 @@
-import { Wallet, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Button } from './Button';
 import { paymentMethods } from '../data/banking';
 
 export function BankingSection() {
+  const { t } = useTranslation();
+
   return (
     <section id="banking" className="py-20 bg-white/5">
       <div className="mx-auto max-w-7xl px-4">
-        <div className="flex items-center gap-3 mb-2">
-          <Wallet className="h-8 w-8 text-purple-400" />
-          <h2 className="text-3xl font-bold">Metodi di Pagamento</h2>
-        </div>
-        <p className="text-gray-400 mb-8">Confronta i migliori metodi di pagamento per casinò online</p>
+        <h2 className="section-title">{t('sections.banking.title')}</h2>
+        <p className="section-subtitle">{t('sections.banking.subtitle')}</p>
         
         <div className="grid gap-6 md:grid-cols-3">
           {paymentMethods.map((method, index) => (
@@ -25,7 +25,7 @@ export function BankingSection() {
               </ul>
               <Link to="/banking">
                 <Button variant="outline" size="sm" className="w-full flex items-center justify-center gap-2">
-                  Maggiori Dettagli
+                  {t('buttons.details')}
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>

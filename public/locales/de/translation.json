@@ -16,6 +16,28 @@
       "search": "Casinos, Boni oder Anleitungen suchen..."
     }
   },
+  "sections": {
+    "casinos": {
+      "title": "Ausgewählte Casinos",
+      "subtitle": "Die besten Online-Casinos für Sie ausgewählt"
+    },
+    "banking": {
+      "title": "Zahlungsmethoden",
+      "subtitle": "Vergleichen Sie die besten Zahlungsmethoden für Online-Casinos"
+    },
+    "strategies": {
+      "title": "Tipps und Strategien",
+      "subtitle": "Detaillierte Anleitungen und Gewinnstrategien für verantwortungsvolles Spielen"
+    },
+    "earnings": {
+      "title": "Online Verdienst",
+      "subtitle": "Legale und verifizierte Methoden zum Online-Verdienen"
+    },
+    "blog": {
+      "title": "Blog und Neuigkeiten",
+      "subtitle": "Artikel, Anleitungen und Updates aus der Online-Casino-Welt"
+    }
+  },
   "buttons": {
     "getBonus": "Bonus Erhalten",
     "review": "Bewertung",

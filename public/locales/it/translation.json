@@ -16,6 +16,28 @@
       "search": "Cerca casinò, bonus o guide..."
     }
   },
+  "sections": {
+    "casinos": {
+      "title": "Casinò in Evidenza",
+      "subtitle": "I migliori casinò online selezionati per te"
+    },
+    "banking": {
+      "title": "Metodi di Pagamento",
+      "subtitle": "Confronta i migliori metodi di pagamento per casinò online"
+    },
+    "strategies": {
+      "title": "Trucchi e Strategie",
+      "subtitle": "Guide dettagliate e strategie vincenti per il gioco responsabile"
+    },
+    "earnings": {
+      "title": "Guadagno Online",
+      "subtitle": "Metodi legali e verificati per guadagnare online"
+    },
+    "blog": {
+      "title": "Blog e Novità",
+      "subtitle": "Articoli, guide e aggiornamenti dal mondo dei casinò online"
+    }
+  },
   "buttons": {
     "getBonus": "Ottieni Bonus",
     "review": "Recensione",

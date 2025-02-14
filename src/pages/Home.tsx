@@ -81,15 +81,6 @@ export function Home() {
                   <option value="crypto">Crypto</option>
                 </select>
               </div>
-
-              <div className="mt-8 flex justify-center gap-4">
-                <Button variant="outline" size="lg" className="min-w-[160px]">
-                  {t('buttons.learnMore')}
-                </Button>
-                <Button variant="primary" size="lg" className="min-w-[160px]">
-                  {t('buttons.startNow')}
-                </Button>
-              </div>
             </div>
           </div>
         </div>
@@ -98,8 +89,8 @@ export function Home() {
       {/* Featured Casinos */}
       <section className="page-section">
         <div className="page-container">
-          <h2 className="section-title">Casinò in Evidenza</h2>
-          <p className="section-subtitle">I migliori casinò online selezionati per te</p>
+          <h2 className="section-title">{t('sections.casinos.title')}</h2>
+          <p className="section-subtitle">{t('sections.casinos.subtitle')}</p>
           <CasinoList casinos={featuredCasinos} />
           <div className="mt-8 flex justify-center">
             <Button variant="outline" size="lg" className="min-w-[200px]">

@@ -16,6 +16,28 @@
       "search": "Buscar casinos, bonos o guías..."
     }
   },
+  "sections": {
+    "casinos": {
+      "title": "Casinos Destacados",
+      "subtitle": "Los mejores casinos online seleccionados para ti"
+    },
+    "banking": {
+      "title": "Métodos de Pago",
+      "subtitle": "Compara los mejores métodos de pago para casinos online"
+    },
+    "strategies": {
+      "title": "Trucos y Estrategias",
+      "subtitle": "Guías detalladas y estrategias ganadoras para el juego responsable"
+    },
+    "earnings": {
+      "title": "Ganancias Online",
+      "subtitle": "Métodos legales y verificados para ganar online"
+    },
+    "blog": {
+      "title": "Blog y Noticias",
+      "subtitle": "Artículos, guías y actualizaciones del mundo de los casinos online"
+    }
+  },
   "buttons": {
     "getBonus": "Obtener Bono",
     "review": "Reseña",

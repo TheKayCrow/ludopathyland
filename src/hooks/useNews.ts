@@ -1,43 +1,53 @@
 import { useState, useEffect } from 'react';
-import { NewsArticle } from '../data/news';
-import { getNews, subscribeToNews } from '../services/newsService';
+import { NewsArticle } from '../types';
+import { newsArticles } from '../data/news';
 
 export function useNews() {
-  const [news, setNews] = useState<NewsArticle[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [news, setNews] = useState<NewsArticle[]>(newsArticles);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    let isSubscribed = true;
+    let mounted = true;
 
-    const fetchNews = async () => {
+    async function fetchNews() {
       try {
-        const data = await getNews();
-        if (isSubscribed) {
+        setLoading(true);
+        // In development, use static data
+        if (import.meta.env.DEV) {
+          if (mounted) {
+            setNews(newsArticles);
+            setError(null);
+          }
+          return;
+        }
+
+        // In production, try to fetch from API
+        const response = await fetch('/api/news');
+        if (!response.ok) throw new Error('Failed to fetch news');
+        const data = await response.json();
+        if (mounted) {
           setNews(data);
-          setLoading(false);
+          setError(null);
         }
       } catch (err) {
-        if (isSubscribed) {
-          setError(err instanceof Error ? err.message : 'Errore nel caricamento delle notizie');
+        if (mounted) {
+          console.error('Error fetching news:', err);
+          // Fallback to static data on error
+          setNews(newsArticles);
+          setError(null);
+        }
+      } finally {
+        if (mounted) {
           setLoading(false);
         }
       }
-    };
+    }
 
-    // Carica le notizie iniziali
     fetchNews();
 
-    // Sottoscrizione agli aggiornamenti
-    const unsubscribe = subscribeToNews((updatedNews) => {
-      if (isSubscribed) {
-        setNews(updatedNews);
-      }
-    });
-
     return () => {
-      isSubscribed = false;
-      unsubscribe();
+      mounted = false;
     };
   }, []);
 

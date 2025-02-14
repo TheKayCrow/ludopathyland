@@ -6,3 +6,13 @@ export interface Casino {
   features: string[];
   affiliateLink: string;
 }
+
+export interface NewsArticle {
+  id: string;
+  title: string;
+  date: string;
+  category: string;
+  image: string;
+  excerpt: string;
+  content: string;
+}

@@ -16,6 +16,28 @@
       "search": "Search casinos, bonuses or guides..."
     }
   },
+  "sections": {
+    "casinos": {
+      "title": "Featured Casinos",
+      "subtitle": "The best online casinos selected for you"
+    },
+    "banking": {
+      "title": "Payment Methods",
+      "subtitle": "Compare the best payment methods for online casinos"
+    },
+    "strategies": {
+      "title": "Tips and Strategies",
+      "subtitle": "Detailed guides and winning strategies for responsible gaming"
+    },
+    "earnings": {
+      "title": "Online Earnings",
+      "subtitle": "Legal and verified methods to earn online"
+    },
+    "blog": {
+      "title": "Blog and News",
+      "subtitle": "Articles, guides and updates from the online casino world"
+    }
+  },
   "buttons": {
     "getBonus": "Get Bonus",
     "review": "Review",
