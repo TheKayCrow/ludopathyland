@@ -1,8 +1,28 @@
 {
+  "nav": {
+    "casinos": "Casinò",
+    "guides": "Guide",
+    "strategies": "Strategie",
+    "banking": "Pagamenti",
+    "earnings": "Guadagni",
+    "news": "Notizie",
+    "login": "Accedi",
+    "register": "Registrati"
+  },
   "cookies": {
     "message": "Utilizziamo i cookie per migliorare la tua esperienza. Continuando la navigazione, accetti la nostra",
     "description": "Puoi scegliere quali cookie accettare. I cookie necessari sono richiesti per il funzionamento del sito.",
     "privacyPolicy": "Privacy Policy",
     "settings": "Impostazioni Cookie"
+  },
+  "home": {
+    "hero": {
+      "title": "Benvenuto su",
+      "subtitle": "La tua guida completa al mondo dei casinò online, strategie e guadagno intelligente. Confronta bonus e trova i migliori casinò."
+    },
+    "cta": {
+      "primary": "Inizia Ora",
+      "secondary": "Scopri di Più"
+    }
   }
 }

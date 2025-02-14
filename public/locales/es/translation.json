@@ -1,8 +1,28 @@
 {
+  "nav": {
+    "casinos": "Casinos",
+    "guides": "Guías",
+    "strategies": "Estrategias",
+    "banking": "Pagos",
+    "earnings": "Ganancias",
+    "news": "Noticias",
+    "login": "Iniciar Sesión",
+    "register": "Registrarse"
+  },
   "cookies": {
     "message": "Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra",
     "description": "Puedes elegir qué cookies aceptar. Las cookies necesarias son requeridas para el funcionamiento del sitio.",
     "privacyPolicy": "Política de Privacidad",
     "settings": "Configuración de Cookies"
+  },
+  "home": {
+    "hero": {
+      "title": "Bienvenido a",
+      "subtitle": "Tu guía completa del mundo de los casinos online, estrategias y ganancias inteligentes. Compara bonos y encuentra los mejores casinos."
+    },
+    "cta": {
+      "primary": "Empezar Ahora",
+      "secondary": "Saber Más"
+    }
   }
 }

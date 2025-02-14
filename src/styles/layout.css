@@ -1,6 +1,6 @@
 /* Layout utilities */
 .page-section {
-  @apply py-20 pt-32 px-4 sm:px-6 lg:px-8;
+  @apply py-20 px-4 sm:px-6 lg:px-8;
 }
 
 .page-section:last-of-type {
@@ -11,17 +11,23 @@
   @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
+/* Skip Links */
+.skip-link {
+  @apply fixed top-0 left-0 p-3 bg-pastel-purple text-gray-900 font-bold -translate-y-full focus:translate-y-0 z-[100] transition-transform;
+}
+
 /* Enhanced section titles */
 .section-title {
   @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-center;
-  @apply bg-gradient-to-r from-pastel-purple via-white to-pastel-pink bg-clip-text text-transparent;
+  @apply text-white;
   @apply mb-6 relative pb-6;
 }
 
 .section-title::after {
   content: '';
   @apply absolute left-1/2 -translate-x-1/2 -bottom-2 w-24 h-1;
-  @apply bg-gradient-to-r from-pastel-purple to-pastel-pink rounded-full;
+  @apply bg-gradient-to-r from-pastel-purple to-pastel-pink;
+  @apply rounded-full;
   @apply transform transition-all duration-300;
 }
 
@@ -30,95 +36,120 @@
 }
 
 .section-subtitle {
-  @apply text-base sm:text-lg text-gray-400 text-center max-w-2xl mx-auto mb-16;
+  @apply text-base sm:text-lg text-gray-300 text-center max-w-2xl mx-auto mb-16;
   @apply animate-fade-in;
 }
 
-/* Mobile-first card styles */
-.card {
-  @apply bg-white/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 backdrop-blur-sm hover:bg-white/10 transition-all;
+/* Focus styles */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-pastel-purple focus:ring-offset-2 focus:ring-offset-gray-900;
 }
 
-/* Responsive form styles */
+/* Interactive elements */
+.interactive-element {
+  @apply min-h-[44px] min-w-[44px];
+  @apply focus-ring;
+}
+
+/* Form elements */
 .form-input {
-  @apply w-full rounded-lg bg-gray-800/50 px-4 sm:px-6 py-2 sm:py-3 text-white backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500;
+  @apply w-full rounded-lg bg-gray-800 px-4 py-3 text-white;
+  @apply border-2 border-gray-700;
+  @apply focus:outline-none focus:ring-2 focus:ring-pastel-purple focus:border-transparent;
+  @apply placeholder-gray-400;
 }
 
-.form-select {
-  @apply w-full rounded-lg bg-gray-800/50 px-4 sm:px-6 py-2 sm:py-3 text-white backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500 [&>option]:bg-gray-900;
+.form-label {
+  @apply block text-base font-medium text-gray-200 mb-2;
 }
 
-/* Responsive search input */
-.search-input {
-  @apply w-full rounded-lg bg-gray-800/50 pl-12 pr-4 py-2 sm:py-3 text-white placeholder-gray-400 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-purple-500;
+/* Buttons */
+.button-base {
+  @apply interactive-element;
+  @apply inline-flex items-center justify-center;
+  @apply font-medium rounded-lg px-4 py-2;
+  @apply transition-all duration-200;
 }
 
-/* Responsive grid layouts */
-.grid-cards {
-  @apply grid gap-4 sm:gap-6 lg:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+.button-primary {
+  @apply bg-gradient-to-r from-pastel-purple to-pastel-pink;
+  @apply text-gray-900 font-bold;
+  @apply shadow-pastel hover:shadow-pastel-lg;
 }
 
-/* Touch-friendly buttons */
-.touch-button {
-  @apply min-h-[44px] min-w-[44px] flex items-center justify-center;
+.button-secondary {
+  @apply bg-gray-700 hover:bg-gray-600;
+  @apply text-white;
+  @apply border-2 border-gray-600;
 }
 
-/* Mobile menu */
-.mobile-menu {
-  @apply fixed inset-0 top-[73px] bg-gray-900/95 backdrop-blur-lg z-50;
+/* Links */
+.link {
+  @apply text-pastel-purple hover:text-pastel-purple-light;
+  @apply underline;
+  @apply focus-ring rounded;
 }
 
-.mobile-menu-link {
-  @apply block p-4 hover:bg-white/5 rounded-lg transition-colors min-h-[44px] flex items-center;
+/* High contrast text */
+.text-high-contrast {
+  @apply text-gray-100;
 }
 
-/* Responsive typography */
-.text-responsive {
-  @apply text-sm sm:text-base lg:text-lg;
+.text-medium-contrast {
+  @apply text-gray-200;
 }
 
-.heading-responsive {
-  @apply text-xl sm:text-2xl lg:text-3xl font-bold;
+/* Semantic headings */
+.heading-1 {
+  @apply text-4xl font-bold text-high-contrast;
 }
 
-/* Touch-friendly spacing */
-.touch-spacing {
-  @apply space-y-4 sm:space-y-6;
+.heading-2 {
+  @apply text-3xl font-bold text-high-contrast;
 }
 
-/* Safe area insets */
-.safe-area-inset {
-  @apply px-4 sm:px-6 lg:px-8 py-4 sm:py-6;
+.heading-3 {
+  @apply text-2xl font-bold text-high-contrast;
 }
 
-/* Responsive images */
-.responsive-image {
-  @apply w-full h-auto aspect-video object-cover rounded-lg;
+/* Improved card contrast */
+.card {
+  @apply bg-gray-800/90;
+  @apply border-2 border-gray-700;
+  @apply rounded-xl p-6;
+  @apply hover:border-pastel-purple;
+  @apply transition-all duration-200;
 }
 
-/* Loading states */
-.loading-skeleton {
-  @apply animate-pulse bg-gray-800/50 rounded-lg;
+/* Animations with reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in,
+  .animate-float,
+  .animate-bounce-slow {
+    @apply animate-none;
+  }
 }
 
-/* Mobile-first navigation */
-.nav-responsive {
-  @apply flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8;
+/* Main content spacing */
+main {
+  min-height: calc(100vh - 73px - 200px); /* Navbar height + Footer height */
 }
 
-/* Touch-friendly form elements */
-.form-touch {
-  @apply min-h-[44px] px-4 rounded-lg;
+/* Responsive container padding */
+@media (max-width: 640px) {
+  .container-responsive {
+    @apply px-4;
+  }
 }
 
-/* Section decorations */
-.section-decoration {
-  @apply relative;
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container-responsive {
+    @apply px-6;
+  }
 }
 
-.section-decoration::before {
-  content: '';
-  @apply absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20;
-  @apply bg-gradient-to-r from-pastel-purple to-pastel-pink opacity-10;
-  @apply rounded-full blur-2xl;
+@media (min-width: 1025px) {
+  .container-responsive {
+    @apply px-8;
+  }
 }

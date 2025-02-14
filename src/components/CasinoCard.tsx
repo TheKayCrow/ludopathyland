@@ -1,7 +1,9 @@
-import { Star, ExternalLink, Sparkles } from 'lucide-react';
+import { Star, ExternalLink, Sparkles, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Button } from './Button';
+import { useFavorites } from '../hooks/useFavorites';
+import { motion } from 'framer-motion';
 
 interface CasinoCardProps {
   name: string;
@@ -14,12 +16,29 @@ interface CasinoCardProps {
 
 export function CasinoCard({ name, rating, bonus, image, features, affiliateLink }: CasinoCardProps) {
   const { t } = useTranslation();
+  const { isFavorite, addFavorite, removeFavorite } = useFavorites();
   const casinoSlug = name.toLowerCase().replace(/\s+/g, '-');
+  const favorite = isFavorite(name);
   
   return (
-    <div className="group relative flex flex-col rounded-3xl bg-white/5 p-6 backdrop-blur-sm transition-all hover:bg-white/10 hover:shadow-pastel">
-      <div className="absolute -top-3 -right-3">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="group relative flex flex-col rounded-3xl bg-white/5 p-6 backdrop-blur-sm transition-all hover:bg-white/10 hover:shadow-pastel"
+    >
+      <div className="absolute -top-3 -right-3 flex gap-2">
         <Sparkles className="h-6 w-6 text-pastel-yellow animate-bounce-slow" />
+        <button
+          onClick={() => favorite ? removeFavorite(name) : addFavorite({ name, rating, bonus, image, features, affiliateLink })}
+          className="h-6 w-6 flex items-center justify-center"
+          aria-label={favorite ? 'Remove from favorites' : 'Add to favorites'}
+        >
+          <Heart 
+            className={`h-5 w-5 transition-colors ${
+              favorite ? 'fill-pastel-red text-pastel-red' : 'text-gray-400 hover:text-pastel-red'
+            }`}
+          />
+        </button>
       </div>
       
       <div className="flex items-center gap-4">
@@ -68,6 +87,6 @@ export function CasinoCard({ name, rating, bonus, image, features, affiliateLink
           </Button>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }

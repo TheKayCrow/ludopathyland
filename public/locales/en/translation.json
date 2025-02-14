@@ -1,8 +1,28 @@
 {
+  "nav": {
+    "casinos": "Casinos",
+    "guides": "Guides",
+    "strategies": "Strategies",
+    "banking": "Banking",
+    "earnings": "Earnings",
+    "news": "News",
+    "login": "Login",
+    "register": "Register"
+  },
   "cookies": {
     "message": "We use cookies to improve your experience. By continuing to browse, you accept our",
     "description": "You can choose which cookies to accept. Necessary cookies are required for the website to function.",
     "privacyPolicy": "Privacy Policy",
     "settings": "Cookie Settings"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to",
+      "subtitle": "Your complete guide to online casinos, strategies, and smart earnings. Compare bonuses and find the best casinos."
+    },
+    "cta": {
+      "primary": "Get Started",
+      "secondary": "Learn More"
+    }
   }
 }

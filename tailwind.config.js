@@ -5,12 +5,17 @@ export default {
     extend: {
       colors: {
         pastel: {
-          purple: '#B388FF',
-          pink: '#FF80AB',
-          blue: '#82B1FF',
-          green: '#69F0AE',
-          yellow: '#FFD740',
-          red: '#FF5252'
+          purple: '#9966FF',
+          purple: {
+            DEFAULT: '#9966FF',
+            dark: '#7B40FF',
+            light: '#B088FF'
+          },
+          pink: '#FF4D8C',
+          blue: '#4D94FF',
+          green: '#33CC66',
+          yellow: '#FFB800',
+          red: '#FF3333'
         },
         gray: {
           900: '#121212',
@@ -63,13 +68,29 @@ export default {
         },
       },
       boxShadow: {
-        'pastel': '0 4px 14px 0 rgba(179, 136, 255, 0.4)',
-        'pastel-lg': '0 10px 25px -3px rgba(179, 136, 255, 0.4)',
-      },
-      backgroundImage: {
-        'pastel-gradient': 'linear-gradient(45deg, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 100%)',
+        'pastel': '0 4px 14px 0 rgba(153, 102, 255, 0.4)',
+        'pastel-lg': '0 10px 25px -3px rgba(153, 102, 255, 0.4)',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addBase, theme }) {
+      addBase({
+        // Improved focus styles
+        '*:focus-visible': {
+          outline: 'none',
+          boxShadow: `0 0 0 2px ${theme('colors.gray.900')}, 0 0 0 4px ${theme('colors.pastel.purple.DEFAULT')}`,
+        },
+        // Reduced motion preferences
+        '@media (prefers-reduced-motion: reduce)': {
+          '*': {
+            animationDuration: '0.01ms !important',
+            animationIterationCount: '1 !important',
+            transitionDuration: '0.01ms !important',
+            scrollBehavior: 'auto !important',
+          },
+        },
+      });
+    },
+  ],
 };

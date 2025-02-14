@@ -1,0 +1,17 @@
+{
+  "defaults": {
+    "timeout": 10000,
+    "wait": 1000,
+    "standard": "WCAG2AA"
+  },
+  "urls": [
+    "http://localhost:5173/",
+    "http://localhost:5173/comparazione",
+    "http://localhost:5173/guide",
+    "http://localhost:5173/news",
+    "http://localhost:5173/strategie",
+    "http://localhost:5173/banking",
+    "http://localhost:5173/guadagni",
+    "http://localhost:5173/crypto"
+  ]
+}

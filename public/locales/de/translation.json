@@ -1,8 +1,28 @@
 {
+  "nav": {
+    "casinos": "Casinos",
+    "guides": "Anleitungen",
+    "strategies": "Strategien",
+    "banking": "Zahlungen",
+    "earnings": "Verdienst",
+    "news": "Neuigkeiten",
+    "login": "Anmelden",
+    "register": "Registrieren"
+  },
   "cookies": {
     "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die weitere Nutzung stimmen Sie unserer",
     "description": "Sie können wählen, welche Cookies Sie akzeptieren möchten. Notwendige Cookies sind für die Funktionalität der Website erforderlich.",
     "privacyPolicy": "Datenschutzerklärung",
     "settings": "Cookie-Einstellungen"
+  },
+  "home": {
+    "hero": {
+      "title": "Willkommen bei",
+      "subtitle": "Ihr umfassender Leitfaden für Online-Casinos, Strategien und intelligentes Verdienen. Vergleichen Sie Boni und finden Sie die besten Casinos."
+    },
+    "cta": {
+      "primary": "Jetzt Starten",
+      "secondary": "Mehr Erfahren"
+    }
   }
 }
